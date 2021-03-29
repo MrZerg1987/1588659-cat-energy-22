@@ -51,19 +51,19 @@
           <li class="pet-data__item">
             <label>
               Имя:*
-              <input class="visually-hidden pet-data__input" type="name" placeholder="Барсик">
+              <input class="visually-hidden pet-data__input" type="name" name="name" placeholder="Барсик">
             </label>
           </li>
           <li class="pet-data__item">
             <label>
               Вес (кг):*
-              <input class="visually-hidden pet-data__input" type="text" placeholder="7">
+              <input class="visually-hidden pet-data__input" type="text" name="weight" placeholder="7">
             </label>
           </li>
           <li class="pet-data__item">
             <label>
               Возраст (лет):
-              <input class="visually-hidden pet-data__input" type="text" placeholder="7">
+              <input class="visually-hidden pet-data__input" type="text" name="age" placeholder="7">
             </label>
           </li>
         </ul>
@@ -97,13 +97,13 @@
           <li class="owner-contacts__item">
             <label>
               E-mail:*
-              <input class="visually-hidden owner-contacts__input owner-contacts__input--email" type="email" placeholder="kuklachev@gmail.com">
+              <input class="visually-hidden owner-contacts__input owner-contacts__input--email" type="email" name="email" placeholder="kuklachev@gmail.com">
             </label>
           </li>
           <li class="owner-contacts__item">
             <label>
               Телефон:*
-              <input class="visually-hidden owner-contacts__input owner-contacts__input--tel" type="tel" placeholder="8 (960) 900-60-90">
+              <input class="visually-hidden owner-contacts__input owner-contacts__input--tel" type="tel" name="tel" placeholder="8 (960) 900-60-90">
             </label>
           </li>
         </ul>
@@ -114,7 +114,7 @@
           Комментарий
         </h2>
         <div class="owner-contacts__textarea">
-          <textarea name="text" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea type="textarea" name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
       </section>
 
