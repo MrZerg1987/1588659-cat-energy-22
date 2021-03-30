@@ -35,16 +35,13 @@
   </header>
 
   <main class="page-catalog">
-    <h1 class="page-catalog__title container">
-      Каталог продукции
-    </h1>
 
     <section class="products container">
-      <h2 class="visually-hidden">
-        Карточки товаров
-      </h2>
-      <ul class="products__list">
-        <li class="products__item">
+      <h1 class="products__title">
+        Каталог продукции
+      </h1>
+      <div class="products__list">
+        <div class="products__item">
           <a href="#" class="products__foto" aria-label="Ссылка на страницу с описанием товара">
             <img src="img/content/chicken-500.png" width="68" height="86" alt="Фото кошачьего корма со вкусом курицы">
           </a>
@@ -72,8 +69,8 @@
             </dd>
           </dl>
           <a href="#" class="products__link" aria-label="Ссылка на страницу с оформлением заказа">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <a href="#" class="products__foto" aria-label="Ссылка на страницу с описанием товара">
             <img src="img/content/chicken-1000.png" width="84" height="101" alt="Фото кошачьего корма со вкусом курицы">
           </a>
@@ -101,8 +98,8 @@
             </dd>
           </dl>
           <a href="#" class="products__link" aria-label="Ссылка на страницу с оформлением заказа">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <a href="#" class="products__foto" aria-label="Ссылка на страницу с описанием товара">
             <img src="img/content/fish-500.png" width="68" height="86" alt="Фото кошачьего корма со вкусом курицы">
           </a>
@@ -130,8 +127,8 @@
             </dd>
           </dl>
           <a href="#" class="products__link" aria-label="Ссылка на страницу с оформлением заказа">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <a href="#" class="products__foto" aria-label="Ссылка на страницу с описанием товара">
             <img src="img/content/fish-1000.png" width="84" height="101" alt="Фото кошачьего корма со вкусом курицы">
           </a>
@@ -159,8 +156,8 @@
             </dd>
           </dl>
           <a href="#" class="products__link" aria-label="Ссылка на страницу с оформлением заказа">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <a href="#" class="products__foto" aria-label="Ссылка на страницу с описанием товара">
             <img src="img/content/buckwheat-500.png" width="68" height="86" alt="Фото кошачьего корма со вкусом курицы">
           </a>
@@ -188,8 +185,8 @@
             </dd>
           </dl>
           <a href="#" class="products__link" aria-label="Ссылка на страницу с оформлением заказа">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <a href="#" class="products__foto" aria-label="Ссылка на страницу с описанием товара">
             <img src="img/content/buckwheat-1000.png" width="84" height="101" alt="Фото кошачьего корма со вкусом курицы">
           </a>
@@ -217,8 +214,8 @@
             </dd>
           </dl>
           <a href="#" class="products__link" aria-label="Ссылка на страницу с оформлением заказа">Заказать</a>
-        </li>
-        <li class="products__item">
+        </div>
+        <div class="products__item">
           <a href="#" class="products__foto" aria-label="Ссылка на страницу с описанием товара">
             <img src="img/content/rice-500.png" width="68" height="86" alt="Фото кошачьего корма со вкусом курицы">
           </a>
@@ -246,17 +243,17 @@
             </dd>
           </dl>
           <a href="#" class="products__link" aria-label="Ссылка на страницу с оформлением заказа">Заказать</a>
-        </li>
-        <li class="products__item show-all">
-          <h3 class="show-all__title">
+        </div>
+        <div class="show-all">
+          <p class="show-all__invitation">
             Показать еще 100500 товаров
-          </h3>
+          </p>
           <p class="show-all__description">
             На самом деле вкусов гораздо больше!
           </p>
           <a href="#" class="products__link show-all__link" aria-label="Показать все товары">Показать все</a>
-        </li>
-      </ul>
+        </div>
+      </div>
     </section>
 
     <section class="additional-products container">
@@ -320,12 +317,12 @@
           </dl>
           <a href="#" class="additional-products__link" aria-label="Ссылка на страницу с оформлением заказа">Заказать</a>
         </li>
-        <li class="additional-products__item">
-          <a href="#" class="link-order-everything" aria-label="Ссылка на страницу с оформлением полного пакета дополнительных товаров">
-            Закажите все и получите чехол для кота в подарок!
-          </a>
-        </li>
       </ul>
+      <div class="additional-products__action-block">
+        <p class="additional-products__action-description">
+          Закажите все и получите чехол для кота в подарок!
+        </p>
+      </div>
     </section>
 
     <section class="collaboration">
