@@ -1,0 +1,19 @@
+.social-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid $color-special-light-grey;
+  border-bottom: 1px solid $color-special-light-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list__svg {
+  display: flex;
+  padding: 18px;
+
+  &:hover path {
+    stroke: $color-green;
+  }
+}

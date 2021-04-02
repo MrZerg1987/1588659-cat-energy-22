@@ -1,0 +1,70 @@
+.how-it-works__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 27px 0 38px 0;
+}
+
+.how-it-works__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.how-it-works__item {
+  font-family: $font-family--arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-dark-grey;
+  margin: 0 0 26px 80px;
+  padding: 2px 0 0 0;
+
+  & p {
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.how-it-works__item--leaf::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/svg/leaf.svg");
+  width: 60px;
+  height: 60px;
+  top: 0;
+  left: 0;
+}
+
+.how-it-works__item--glass::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/svg/glass-water.svg");
+  width: 60px;
+  height: 60px;
+  top: 80px;
+  left: 0;
+}
+
+.how-it-works__item--fork::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/svg/fork-knife.svg");
+  width: 60px;
+  height: 60px;
+  top: 160px;
+  left: 0;
+}
+
+.how-it-works__item--alarm::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../img/svg/alarm-clock.svg");
+  width: 60px;
+  height: 60px;
+  top: 240px;
+  left: 0;
+}

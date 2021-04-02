@@ -1,0 +1,49 @@
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.stats__item {
+  padding: 15px 0 0 0;
+  margin: 0;
+  width: 124px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 124px;
+    height: 56px;
+    border: 1px solid $color-special-border-grey;
+    border-radius: 5px;
+    top: 0;
+    left: 0;
+  }
+}
+
+.stats__value {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0 0 5px 0;
+}
+
+.stats__description {
+  margin: 0 20px;
+  font-family: $font-family--arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: $color-dark-grey;
+  width: 82px;
+  text-align: center;
+  background-color: $color-special-background-grey;
+  z-index: 1;
+}
