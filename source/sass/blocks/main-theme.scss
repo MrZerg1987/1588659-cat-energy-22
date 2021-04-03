@@ -27,11 +27,6 @@
     margin-left: -160px;
     z-index: 1;
   }
-
-  & img {
-    margin: 0 auto;
-    z-index: 1;
-  }
 }
 
 .main-theme__title {
@@ -58,7 +53,12 @@
   z-index: 1;
 }
 
-.main-theme__button {
+.main-theme__img {
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.main-theme__link {
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

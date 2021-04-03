@@ -1,9 +1,11 @@
-.collaboration {
-  & .container {
-    display: flex;
-    align-items: center;
-    padding: 28px 19px;
-  }
+.collaboration .container {
+  display: flex;
+  align-items: center;
+  padding: 28px 19px;
+}
+
+.collaboration__background-grey {
+  background-color: $color-background-grey;
 }
 
 .collaboration__slogan {
@@ -16,7 +18,7 @@
   margin: 0;
 }
 
- .collaboration__address {
+.collaboration__address {
   font-family: $font-family--arial;
   font-style: normal;
   font-weight: 400;
@@ -24,10 +26,8 @@
   line-height: 20px;
   color: $color-dark-grey;
   width: 140px;
- }
+}
 
- .collaboration__map {
-   & img {
-    margin: 0 auto;
-  }
- }
+.collaboration__img {
+  margin: 0 auto;
+}
