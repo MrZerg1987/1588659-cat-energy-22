@@ -1,4 +1,4 @@
-.how-it-works__title {
+.work__title {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -6,14 +6,14 @@
   margin: 27px 0 38px 0;
 }
 
-.how-it-works__list {
+.work__list {
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
 }
 
-.how-it-works__item {
+.work__item {
   font-family: $font-family--arial;
   font-style: normal;
   font-weight: 400;
@@ -32,27 +32,27 @@
   }
 }
 
-.how-it-works__item--leaf::after {
-  background-image: url("../../img/svg/leaf.svg");
+.work__item--leaf::after {
+  background-image: url("../img/svg/leaf.svg");
   top: 0;
 }
 
-.how-it-works__item--glass::after {
-  background-image: url("../../img/svg/glass-water.svg");
+.work__item--glass::after {
+  background-image: url("../img/svg/glass-water.svg");
   top: 80px;
 }
 
-.how-it-works__item--fork::after {
-  background-image: url("../../img/svg/fork-knife.svg");
+.work__item--fork::after {
+  background-image: url("../img/svg/fork-knife.svg");
   top: 160px;
 }
 
-.how-it-works__item--alarm::after {
-  background-image: url("../../img/svg/alarm-clock.svg");
+.work__item--alarm::after {
+  background-image: url("../img/svg/alarm-clock.svg");
   top: 240px;
 }
 
-.how-it-works__description {
+.work__description {
   margin: 0;
   padding: 0;
 }

@@ -7,19 +7,10 @@
 }
 
 .header__main-logo {
-  padding: 24px 50px;
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    background-image: url("../../img/svg/logo-mobile.svg");
-    background-repeat: no-repeat;
-    width: 34px;
-    height: 38px;
-    top: 12px;
-    left: -40px;
-  }
+  width: 320px;
+  padding: 11px 109px 17px 20px;
+  display: flex;
+  justify-content: space-between;
 
   &:hover {
     opacity: 0.8;

@@ -1,7 +1,9 @@
-.collaboration .container {
+.collaboration__wrapper {
   display: flex;
   align-items: center;
   padding: 28px 19px;
+  width: 320px;
+  margin: auto;
 }
 
 .collaboration__background-grey {
