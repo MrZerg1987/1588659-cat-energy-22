@@ -1,0 +1,35 @@
+.collaboration__wrapper {
+  display: flex;
+  align-items: center;
+  padding: 28px 19px;
+  width: 320px;
+  margin: auto;
+}
+
+.collaboration__background-grey {
+  background-color: $color-background-grey;
+}
+
+.collaboration__slogan {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  width: 140px;
+  margin: 0;
+}
+
+.collaboration__address {
+  font-family: $font-family--arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $color-dark-grey;
+  width: 140px;
+}
+
+.collaboration__img {
+  margin: 0 auto;
+}

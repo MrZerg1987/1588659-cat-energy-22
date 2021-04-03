@@ -1,0 +1,22 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.header__main-logo {
+  width: 320px;
+  padding: 11px 109px 17px 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}

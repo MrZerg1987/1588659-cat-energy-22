@@ -1,0 +1,58 @@
+.work__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  margin: 27px 0 38px 0;
+}
+
+.work__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.work__item {
+  font-family: $font-family--arial;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-dark-grey;
+  margin: 0 0 26px 80px;
+  padding: 2px 0 0 0;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    left: 0;
+  }
+}
+
+.work__item--leaf::after {
+  background-image: url("../img/svg/leaf.svg");
+  top: 0;
+}
+
+.work__item--glass::after {
+  background-image: url("../img/svg/glass-water.svg");
+  top: 80px;
+}
+
+.work__item--fork::after {
+  background-image: url("../img/svg/fork-knife.svg");
+  top: 160px;
+}
+
+.work__item--alarm::after {
+  background-image: url("../img/svg/alarm-clock.svg");
+  top: 240px;
+}
+
+.work__description {
+  margin: 0;
+  padding: 0;
+}
