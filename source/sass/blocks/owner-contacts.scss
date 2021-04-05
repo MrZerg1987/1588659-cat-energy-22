@@ -1,0 +1,82 @@
+.owner-contacts__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  margin: 26px 0 35px 0;
+  padding: 0;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    border-bottom: 2px solid $color-green;
+    right: 0;
+  }
+}
+
+.owner-contacts__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-row-gap: 14px;
+  color: $color-dark-grey;
+}
+
+.owner-contacts__item {
+  display: grid;
+}
+
+.owner-contacts__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  display: grid;
+  grid-column-gap: 15px;
+  grid-template-columns: max-content 1fr;
+  align-items: center;
+  position: relative;
+
+  svg {
+    position: absolute;
+    right: 15px;
+    top: center;
+  }
+}
+
+.owner-contacts__input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 13px 15px;
+  border: 1px solid $color-input-grey;
+
+  &::placeholder {
+    color: $color-dark-grey;
+  }
+}
+
+.form-products-search svg {
+  position: absolute;
+  fill: var(--basic-white);
+  opacity: 0.3;
+  width: 17px;
+  height: 17px;
+  left: 17px;
+  top: 12px;
+}
+
+.products-search:hover + svg {
+  opacity: 1;
+}
+
+.products-search:focus + svg {
+  opacity: 1;
+  fill: var(--basic-red);
+}

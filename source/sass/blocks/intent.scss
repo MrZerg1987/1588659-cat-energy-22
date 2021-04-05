@@ -1,0 +1,45 @@
+.intent__list {
+  list-style: none;
+  margin: 0;
+  padding: 30px 0 25px 0;
+  display: grid;
+  grid-row-gap: 28px;
+  color: $color-dark-grey;
+  border-bottom: 1px solid $color-special-light-grey;
+}
+
+.intent__label {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 0 0 0 46px;
+  position: relative;
+}
+
+.intent__input + label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $color-special-border-grey;
+  border-radius: 50%;
+}
+
+.intent__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: 7px;
+  bottom: 4px;
+  width: 1px;
+  height: 1px;
+  border: 8px solid $color-green;
+  border-radius: 50%;
+}
+
+.intent__input:disabled + label {
+  opacity: 0.3;
+}
