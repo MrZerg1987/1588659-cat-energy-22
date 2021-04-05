@@ -1,13 +1,16 @@
 .collaboration__wrapper {
   display: flex;
   align-items: center;
-  padding: 28px 19px;
+  padding: 28px 20px;
   width: 320px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .collaboration__background-grey {
   background-color: $color-background-grey;
+  display: flex;
+  align-items: center;
+  padding: 28px 20px;
 }
 
 .collaboration__slogan {

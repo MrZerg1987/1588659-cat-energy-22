@@ -1,4 +1,4 @@
-.work__title {
+.concept__title {
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -6,14 +6,14 @@
   margin: 27px 0 38px 0;
 }
 
-.work__list {
+.concept__list {
   list-style: none;
   margin: 0;
   padding: 0;
   position: relative;
 }
 
-.work__item {
+.concept__item {
   font-family: $font-family--arial;
   font-style: normal;
   font-weight: 400;
@@ -32,27 +32,27 @@
   }
 }
 
-.work__item--leaf::after {
+.concept__item--leaf::after {
   background-image: url("../img/svg/leaf.svg");
   top: 0;
 }
 
-.work__item--glass::after {
-  background-image: url("../img/svg/glass-water.svg");
+.concept__item--glass::after {
+  background-image: url("../img/svg/glass.svg");
   top: 80px;
 }
 
-.work__item--fork::after {
-  background-image: url("../img/svg/fork-knife.svg");
+.concept__item--fork::after {
+  background-image: url("../img/svg/fork.svg");
   top: 160px;
 }
 
-.work__item--alarm::after {
-  background-image: url("../img/svg/alarm-clock.svg");
+.concept__item--alarm::after {
+  background-image: url("../img/svg/alarm.svg");
   top: 240px;
 }
 
-.work__description {
+.concept__description {
   margin: 0;
   padding: 0;
 }
