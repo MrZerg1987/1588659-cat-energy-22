@@ -1,55 +1,64 @@
 .concept__title {
+  margin: 27px 0 38px 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 27px 0 38px 0;
 }
 
 .concept__list {
-  list-style: none;
+  position: relative;
+
   margin: 0;
   padding: 0;
-  position: relative;
+
+  list-style: none;
 }
 
 .concept__item {
-  font-family: $font-family--arial;
+  margin: 0 0 26px 80px;
+  padding: 2px 0 0 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  font-family: $font-family--arial;
   color: $color-dark-grey;
-  margin: 0 0 26px 80px;
-  padding: 2px 0 0 0;
 
   &::after {
     content: "";
     position: absolute;
+    left: 0;
+
     width: 60px;
     height: 60px;
-    left: 0;
   }
 }
 
 .concept__item--leaf::after {
-  background-image: url("../img/svg/leaf.svg");
   top: 0;
+
+  background-image: url("../img/svg/leaf.svg");
 }
 
 .concept__item--glass::after {
-  background-image: url("../img/svg/glass.svg");
   top: 80px;
+
+  background-image: url("../img/svg/glass.svg");
 }
 
 .concept__item--fork::after {
-  background-image: url("../img/svg/fork.svg");
   top: 160px;
+
+  background-image: url("../img/svg/fork.svg");
 }
 
 .concept__item--alarm::after {
-  background-image: url("../img/svg/alarm.svg");
   top: 240px;
+
+  background-image: url("../img/svg/alarm.svg");
 }
 
 .concept__description {

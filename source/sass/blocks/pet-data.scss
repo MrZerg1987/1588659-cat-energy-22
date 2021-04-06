@@ -1,19 +1,24 @@
 .pet-data__list {
-  list-style: none;
+  position: relative;
+
+  display: grid;
   margin: 0;
   padding: 0 0 24px 0;
-  display: grid;
-  grid-row-gap: 13px;
+
+  list-style: none;
   color: $color-dark-grey;
-  position: relative;
+
+  grid-row-gap: 13px;
 
   &::after {
     content: "";
     position: absolute;
-    width: 320px;
-    border-bottom: 1px solid $color-special-light-grey;
     bottom: 0;
     left: -20px;
+
+    width: 320px;
+
+    border-bottom: 1px solid $color-special-light-grey;
   }
 }
 
@@ -22,24 +27,28 @@
 }
 
 .pet-data__label {
+  display: grid;
+  align-items: center;
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  display: grid;
+
   grid-column-gap: 15px;
   grid-template-columns: max-content 1fr;
-  align-items: center;
 }
 
 .pet-data__input {
+  padding: 13px 15px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  padding: 13px 15px;
+
   border: 1px solid $color-input-grey;
 
   &::placeholder {
