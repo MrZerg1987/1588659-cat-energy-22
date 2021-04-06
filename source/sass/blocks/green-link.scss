@@ -1,0 +1,23 @@
+.green-link {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  padding: 11px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-white;
+  text-transform: uppercase;
+
+  background-color: $color-green-opacity;
+
+  &:hover {
+    background-color: $color-green-hover;
+  }
+
+  &:active {
+    color: $color-white-opacity;
+  }
+}

@@ -1,55 +1,65 @@
 .programs__list {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding: 0;
+
+  list-style: none;
 }
 
 .programs__item {
-  background-color: $color-background-grey;
-  padding: 22px;
-  margin: 0 0 20px 0;
   position: relative;
+
+  margin: 0 0 20px 0;
+  padding: 22px;
+
+  background-color: $color-background-grey;
 }
 
 .programs__item--weight-loss::before {
   content: "";
   position: absolute;
-  background-image: url("../img/svg/slim-cat.svg");
-  width: 50px;
-  height: 50px;
   top: 21px;
   left: 22px;
+
+  width: 50px;
+  height: 50px;
+
+  background-image: url("../img/svg/slim-cat.svg");
 }
 
 .programs__item--muscle-mass::before {
   content: "";
   position: absolute;
-  background-image: url("../img/svg/muscular-cat.svg");
-  width: 67px;
-  height: 50px;
   top: 24px;
   left: 13px;
+
+  width: 67px;
+  height: 50px;
+
+  background-image: url("../img/svg/muscular-cat.svg");
 }
 
 .programs__title {
   margin: 0 0 29px 71px;
+  padding: 8px 0 0 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
-  padding: 8px 0 0 0;
 }
 
 .programs__description {
-  font-family: $font-family--arial;
+  margin: 0 0 15px 0;
+  padding: 0 0 23px 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  font-family: $font-family--arial;
   color: $color-dark-grey;
-  padding: 0 0 23px 0;
-  margin: 0 0 15px 0;
+
   border-bottom: 1px solid $color-special-light-grey;
 }
 

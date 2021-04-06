@@ -1,12 +1,14 @@
 .social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  border-top: 1px solid $color-special-light-grey;
-  border-bottom: 1px solid $color-special-light-grey;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  border-top: 1px solid $color-special-light-grey;
+  border-bottom: 1px solid $color-special-light-grey;
 }
 
 .social-list__svg {

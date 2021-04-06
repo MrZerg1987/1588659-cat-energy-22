@@ -1,29 +1,33 @@
 .example {
-  background-color: $color-special-background-grey;
   padding: 27px 0 25px 0;
+
+  background-color: $color-special-background-grey;
 }
 
 .example__title {
+  margin: 0 0 33px 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
-  margin: 0 0 33px 0;
 }
 
 .example__description {
-  font-family: $font-family--arial;
+  margin: 0 0 26px 0;
+  padding: 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
+  font-family: $font-family--arial;
   color: $color-dark-grey;
-  padding: 0;
-  margin: 0 0 26px 0;
 }
 
 .example__total {
   margin: 20px 10px 44px 10px;
+
   text-align: center;
 }
 
@@ -45,38 +49,42 @@
 }
 
 .example__buttons {
-  margin: 0 auto;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .example__button {
-  border: 0;
-  outline: none;
-  background-color: transparent;
-  cursor: pointer;
+  padding: 10px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  padding: 10px;
+
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 }
 
 .example__range {
-  height: 14px;
   width: 84px;
+  height: 14px;
+
   background: $color-white;
   border: 1px solid $color-special-border-grey;
   border-radius: 10px;
 }
 
 .example__selector {
-  margin: 3px 5px;
   width: 50%;
   height: 6px;
+  margin: 3px 5px;
+
   background: $color-green;
   border-radius: 5px;
 }

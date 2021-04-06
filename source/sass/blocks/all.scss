@@ -1,0 +1,61 @@
+.all__header {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -20px;
+
+    width: 320px;
+
+    border-top: 1px solid $color-border-grey;
+  }
+}
+
+.all__svg {
+  margin: 25px auto 23px auto;
+}
+
+.all__invitation {
+  margin: 0 0 8px 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $color-special-black;
+  text-transform: uppercase;
+}
+
+.all__description {
+  margin: 0 0 21px 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: $font-family--arial;
+  text-align: center;
+  color: $color-dark-grey;
+}
+
+.all__link {
+  display: flex;
+  justify-content: center;
+  width: 280px;
+  padding: 11px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-dark-grey;
+  text-transform: uppercase;
+
+  background-color: $color-background-grey;
+}

@@ -1,36 +1,39 @@
 .collaboration__wrapper {
   display: flex;
   align-items: center;
-  padding: 28px 20px;
   width: 320px;
   margin: 0 auto;
+  padding: 28px 20px;
 }
 
 .collaboration__background-grey {
-  background-color: $color-background-grey;
   display: flex;
   align-items: center;
   padding: 28px 20px;
+
+  background-color: $color-background-grey;
 }
 
 .collaboration__slogan {
+  width: 140px;
+  margin: 0;
+
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  width: 140px;
-  margin: 0;
 }
 
 .collaboration__address {
-  font-family: $font-family--arial;
+  width: 140px;
+
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
+  font-family: $font-family--arial;
   color: $color-dark-grey;
-  width: 140px;
 }
 
 .collaboration__img {
