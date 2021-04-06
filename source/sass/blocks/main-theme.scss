@@ -57,25 +57,3 @@
   margin: 0 auto;
   z-index: 1;
 }
-
-.main-theme__link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  display: flex;
-  justify-content: center;
-  background-color: $color-green-opacity;
-  text-transform: uppercase;
-  color: $color-white;
-  width: 280px;
-  padding: 11px;
-
-  &:hover {
-    background-color: $color-green-hover;
-  }
-
-  &:active {
-    color: $color-white-opacity;
-  }
-}

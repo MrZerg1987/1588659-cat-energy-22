@@ -10,9 +10,9 @@
   &::after {
     content: "";
     position: absolute;
-    width: 120px;
+    width: 140px;
     border-bottom: 2px solid $color-green;
-    right: 0;
+    right: -20px;
     top: 15px;
   }
 }

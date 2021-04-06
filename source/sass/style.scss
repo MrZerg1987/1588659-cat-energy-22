@@ -6,6 +6,7 @@
 @import "global/utils";
 @import "variables";
 @import "blocks/additionally";
+@import "blocks/all";
 @import "blocks/body";
 @import "blocks/collaboration";
 @import "blocks/comment";
@@ -13,13 +14,16 @@
 @import "blocks/copyright";
 @import "blocks/example";
 @import "blocks/footer";
+@import "blocks/green-link";
 @import "blocks/header";
 @import "blocks/intent";
 @import "blocks/main-nav";
 @import "blocks/main-theme";
+@import "blocks/other";
 @import "blocks/owner-contacts";
 @import "blocks/page-form";
 @import "blocks/pet-data";
+@import "blocks/products";
 @import "blocks/programs";
 @import "blocks/section-form";
 @import "blocks/social-list";
