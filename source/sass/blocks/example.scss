@@ -1,7 +1,30 @@
 .example {
+  position: relative;
+
+  width: 320px;
+  margin: 0 auto;
   padding: 27px 0 25px 0;
 
   background-color: $color-special-background-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    padding: 43px 0 64px 0;
+
+    background: linear-gradient(to bottom, $color-white 50%, $color-special-background-grey 50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    padding: 69px 0 75px 0;
+  }
+}
+
+.example__blocks {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .example__title {
@@ -11,9 +34,21 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 63px 0;
+
+    font-size: 60px;
+    line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 146px 0;
+  }
 }
 
 .example__description {
+  width: 280px;
   margin: 0 0 26px 0;
   padding: 0;
 
@@ -23,29 +58,43 @@
   line-height: 18px;
   font-family: $font-family--arial;
   color: $color-dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 700px;
+
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin: 0 0 69px 0;
+  }
 }
 
-.example__total {
-  margin: 20px 10px 44px 10px;
-
-  text-align: center;
-}
-
-.example__total-description {
-  margin: 0;
-  padding: 0;
-}
-
-.example__total-value {
-  padding: 0 0 0 5px;
-}
-
-.example__img {
+.example__img-mobile {
   margin: 0 auto 15px auto;
 
-  &:first-child {
+  @media (min-width: $tablet-width) {
     display: none;
   }
+}
+
+.example__img-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 30px auto;
+  }
+}
+
+.example__img-disable {
+  display: none;
 }
 
 .example__buttons {
@@ -53,10 +102,15 @@
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 593px;
+  }
 }
 
 .example__button {
-  padding: 10px;
+  padding: 7px 0;
 
   font-style: normal;
   font-weight: 400;
@@ -69,15 +123,34 @@
   border: 0;
   outline: none;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted $color-dark-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .example__range {
+  position: relative;
+
   width: 84px;
   height: 14px;
+  margin: 0 12px;
 
   background: $color-white;
   border: 1px solid $color-special-border-grey;
   border-radius: 10px;
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    height: 6px;
+
+    background: $color-special-border-grey;
+  }
 }
 
 .example__selector {
@@ -87,4 +160,17 @@
 
   background: $color-green;
   border-radius: 5px;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -17px;
+    left: 45%;
+
+    box-sizing: content-box;
+    width: 8px;
+    height: 8px;
+
+    border: 13px solid $color-white;
+    border-radius: 50%;
+  }
 }

@@ -10,17 +10,27 @@
 
   <body class="body">
     <header class="header container">
-      <a class="header__main-logo">
+      <a class="header__logo-mobile">
         <img
           src="img/svg/logo-mobile.svg"
-          width="34"
+          width="280"
           height="38"
-          alt="Логотип-иконка компании Кэт энерджи"
+          alt="Логотип компании Кэт энерджи"
         />
+      </a>
+      <a class="header__logo-tablet">
         <img
-          src="img/svg/main-logo.svg"
-          width="100"
-          height="18"
+          src="img/svg/logo-tablet.svg"
+          width="174"
+          height="52"
+          alt="Логотип компании Кэт энерджи"
+        />
+      </a>
+      <a class="header__logo-desktop">
+        <img
+          src="img/svg/logo-desktop.svg"
+          width="202"
+          height="59"
           alt="Логотип компании Кэт энерджи"
         />
       </a>
@@ -35,7 +45,9 @@
             <a class="main-nav__link" href="index.html"> Главная </a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link"> Каталог продукции </a>
+            <a class="main-nav__link main-nav__link--active">
+              Каталог продукции
+            </a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html"> Подбор программы </a>
@@ -468,7 +480,9 @@
       </section>
 
       <section class="collaboration">
-        <div class="collaboration__background-grey container">
+        <div
+          class="collaboration__wrapper collaboration__background-grey container"
+        >
           <h2 class="visually-hidden">Сотрудничество</h2>
           <p class="collaboration__slogan">
             Приглашаем к сотрудничеству дилеров!

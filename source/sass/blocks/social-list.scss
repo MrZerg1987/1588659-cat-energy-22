@@ -9,9 +9,21 @@
 
   border-top: 1px solid $color-special-light-grey;
   border-bottom: 1px solid $color-special-light-grey;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 129px;
+
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 .social-list__svg {
   display: flex;
   padding: 18px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

@@ -6,6 +6,15 @@
   align-items: center;
   padding: 27px 35px;
 
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: static;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -16,7 +25,23 @@
     height: 302px;
     margin-left: -160px;
 
-    background: url("../img/content/background-cat.png");
+    background: url("../img/content/background-cat-mobile.png");
+    background-position-x: -157px;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      z-index: -2;
+
+      display: flex;
+      width: 720px;
+      height: 694px;
+      margin: 0;
+
+      background: url("../img/content/background-cat-desktop.png");
+    }
   }
 
   &::before {
@@ -31,6 +56,19 @@
     margin-left: -160px;
 
     background: $color-green-opacity;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      z-index: -1;
+
+      display: flex;
+      width: 720px;
+      height: 694px;
+      margin: 0;
+    }
   }
 }
 
@@ -38,7 +76,7 @@
   z-index: 1;
 
   width: 249px;
-  margin: 0;
+  margin: 0 0 25px 0;
 
   font-style: normal;
   font-weight: 400;
@@ -46,12 +84,28 @@
   line-height: 36px;
   text-align: center;
   color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    margin: 40px 0 40px 85px;
+    padding: 0;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 57px 0 40px 190px;
+  }
 }
 
 .main-theme__description {
   z-index: 1;
 
-  margin: 25px 0 29px 0;
+  width: 198px;
+  margin: 0 0 302px 0;
 
   font-style: normal;
   font-weight: 400;
@@ -60,10 +114,61 @@
   text-align: center;
   color: $color-white;
   text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 167px;
+    left: 7px;
+
+    width: 280px;
+    height: 270px;
+
+    background: url("../img/content/cat-food.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-width: $tablet-width) {
+      top: 236px;
+      left: 37px;
+      z-index: -1;
+
+      width: 709px;
+      height: 609px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 141px;
+      left: 40%;
+
+      width: 552px;
+      height: 499px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 283px;
+    margin: 0 0 49px 85px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 190px;
+  }
 }
 
-.main-theme__img {
+.main-theme__link {
   z-index: 1;
 
-  margin: 0 auto;
+  @media (min-width: $tablet-width) {
+    margin: 0 0 526px 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 267px 190px;
+  }
 }
