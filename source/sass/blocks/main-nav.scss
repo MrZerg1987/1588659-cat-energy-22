@@ -32,6 +32,8 @@
 .main-nav__list {
   margin: 0;
   padding: 0;
+  display: flex;
+  flex-wrap: wrap;
 
   list-style: none;
 
@@ -63,6 +65,7 @@
 
   @media (min-width: $tablet-width) {
     border-top: none;
+    margin: 0 5px 0 0;
   }
 
   &:last-child {
