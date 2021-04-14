@@ -10,6 +10,11 @@
 
   grid-row-gap: 28px;
 
+  @media (min-width: $tablet-width) {
+    padding: 25px 28px;
+    border: 1px solid $color-special-light-grey;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -19,6 +24,10 @@
     width: 320px;
 
     border-bottom: 1px solid $color-special-light-grey;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 }
 
@@ -32,6 +41,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 0 0 60px;
+  }
 }
 
 .intent__input + label::before {
@@ -45,6 +60,11 @@
 
   border: 1px solid $color-special-border-grey;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .intent__input:checked + label::after {
@@ -58,6 +78,12 @@
 
   border: 8px solid $color-green;
   border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    border: 10px solid $color-green;
+    bottom: 7px;
+    left: 11px;
+  }
 }
 
 .intent__input:disabled + label {

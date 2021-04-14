@@ -1,6 +1,9 @@
-.additionally__title {
+.additionally {
   position: relative;
+}
 
+.additionally__title {
+  width: 141px;
   margin: 23px 0 34px 0;
   padding: 0;
 
@@ -9,27 +12,57 @@
   font-size: 24px;
   line-height: 26px;
 
+  background-color: $color-white;
+  box-shadow: 0 0 0 20px $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: max-content;
+    margin: 65px 0 57px 0;
+
+    font-size: 36px;
+    line-height: 36px;
+
+    box-shadow: 0 0 0 40px $color-white;
+  }
+
   &::after {
     content: "";
     position: absolute;
     top: 15px;
-    right: -20px;
+    left: 0;
+    z-index: -1;
 
-    width: 140px;
+    width: 100%;
 
     border-bottom: 2px solid $color-green;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
   }
 }
 
 .additionally__list {
   display: grid;
+  grid-template-columns: 1fr;
   margin: 0;
-  padding: 0 0 34px 0;
+  padding: 0;
 
   list-style: none;
   color: $color-dark-grey;
 
   grid-row-gap: 28px;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-row-gap: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 104px;
+    justify-content: space-between;
+  }
 }
 
 .additionally__label {
@@ -42,6 +75,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 0 0 0 59px;
+  }
 }
 
 .additionally__input + label::before {
@@ -54,12 +93,17 @@
   height: 30px;
 
   border: 1px solid $color-special-border-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .additionally__input:checked + label::after {
   content: "";
   position: absolute;
-  bottom: 5px;
+  bottom: 6px;
   left: 7px;
 
   width: 18px;
@@ -67,6 +111,11 @@
 
   background-image: url("../img/svg/check-mark.svg");
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    bottom: 10px;
+    left: 11px;
+  }
 }
 
 .additionally__input:disabled + label {

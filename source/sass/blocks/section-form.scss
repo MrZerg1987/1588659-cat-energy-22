@@ -1,34 +1,56 @@
-.section-form__button-result {
+.section-form__first-block {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 80px;
+    justify-content: space-between;
+  }
+}
+
+.section-form__result {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
+  margin: 34px auto 32px auto;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
+}
+
+.section-form__button-result {
   width: 280px;
-  margin: 0 0 21px 0;
   padding: 8px;
 
-  font-style: normal;
-  font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
-  color: $color-white;
-  text-transform: uppercase;
 
-  background-color: $color-green;
-  border: 0;
-  outline: none;
-  cursor: pointer;
+  @media (min-width: $tablet-width) {
+    margin: 54px 0 72px 0;
+    padding: 13px;
+    width: 282px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+  }
 }
 
 .section-form__span {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  margin: 0 0 32px 0;
+  margin: 21px auto 0 auto;
 
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   font-family: $font-family--arial;
+
+  @media (min-width: $tablet-width) {
+    width: 210px;
+    margin: 0 46px 18px 46px;
+    align-self: center;
+    font-size: 16px;
+    padding: 15px;
+  }
 }

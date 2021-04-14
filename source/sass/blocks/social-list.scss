@@ -9,9 +9,34 @@
 
   border-top: 1px solid $color-special-light-grey;
   border-bottom: 1px solid $color-special-light-grey;
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    width: 129px;
+
+    border-top: none;
+    border-bottom: none;
+  }
 }
 
 .social-list__svg {
   display: flex;
   padding: 18px;
+
+  color: $color-speсial-dark-grey;
+
+  &:hover,
+  &:focus {
+    color: $color-green;
+  }
+
+  &:active {
+    color: $color-green;
+
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }

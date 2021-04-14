@@ -1,8 +1,15 @@
 .programs__list {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   list-style: none;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+
+    grid-gap: 80px;
+    grid-template-columns: 570px 570px;
+  }
 }
 
 .programs__item {
@@ -12,6 +19,16 @@
   padding: 22px;
 
   background-color: $color-background-grey;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 30px 0;
+    padding: 77px 53px 53px 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    padding: 77px 51px 55px 52px;
+  }
 }
 
 .programs__item--weight-loss::before {
@@ -24,6 +41,24 @@
   height: 50px;
 
   background-image: url("../img/svg/slim-cat.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    top: 81px;
+    left: 446px;
+
+    width: 200px;
+    height: 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 41px;
+    left: 52px;
+
+    width: 100px;
+    height: 106px;
+  }
 }
 
 .programs__item--muscle-mass::before {
@@ -36,6 +71,24 @@
   height: 50px;
 
   background-image: url("../img/svg/muscular-cat.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  @media (min-width: $tablet-width) {
+    top: 91px;
+    left: 412px;
+
+    width: 268px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 47px;
+    left: 33px;
+
+    width: 134px;
+    height: 100px;
+  }
 }
 
 .programs__title {
@@ -47,9 +100,22 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 24px 0;
+    padding: 0;
+
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 73px 162px;
+  }
 }
 
 .programs__description {
+  width: 227px;
   margin: 0 0 15px 0;
   padding: 0 0 23px 0;
 
@@ -61,14 +127,45 @@
   color: $color-dark-grey;
 
   border-bottom: 1px solid $color-special-light-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 377px;
+    margin: 0 0 48px 0;
+    padding: 0;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    border-bottom: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 467px;
+    margin: 0 0 23px 0;
+  }
 }
 
 .programs__link {
   display: flex;
   width: 155px;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 170px;
+  }
 }
 
 .programs__span {
   padding-right: 15px;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
