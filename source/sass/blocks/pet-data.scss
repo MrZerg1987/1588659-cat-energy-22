@@ -10,6 +10,12 @@
 
   grid-row-gap: 13px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 72px 0;
+    padding: 0;
+    grid-row-gap: 20px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -19,6 +25,10 @@
     width: 320px;
 
     border-bottom: 1px solid $color-special-light-grey;
+
+    @media (min-width: $tablet-width) {
+      border-bottom: none;
+    }
   }
 }
 
@@ -38,6 +48,11 @@
 
   grid-column-gap: 15px;
   grid-template-columns: max-content 1fr;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .pet-data__input {
@@ -50,6 +65,12 @@
   text-transform: uppercase;
 
   border: 1px solid $color-input-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding: 10px 15px;
+  }
 
   &::placeholder {
     color: $color-dark-grey;

@@ -4,7 +4,16 @@
   align-items: center;
   padding: 22px 0;
 
+  color: $color-speсial-dark-grey;
+
+  &:hover,
+  &:focus {
+    color: $color-green;
+  }
+
   &:active {
+    color: $color-green;
+
     opacity: 0.3;
   }
 

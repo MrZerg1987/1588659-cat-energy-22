@@ -1,17 +1,17 @@
 .green-link {
   display: flex;
   justify-content: center;
-  width: 280px;
-  padding: 11px;
 
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
   color: $color-white;
   text-transform: uppercase;
+  text-align: center;
 
   background-color: $color-green;
+  border: 0;
+  outline: none;
+  cursor: pointer;
 
   &:hover {
     background-color: $color-green-hover;
@@ -19,13 +19,5 @@
 
   &:active {
     color: $color-white-opacity;
-  }
-
-  @media (min-width: $tablet-width) {
-    width: 244px;
-    padding: 17px;
-
-    font-size: 20px;
-    line-height: 20px;
   }
 }

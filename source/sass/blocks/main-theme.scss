@@ -1,5 +1,6 @@
 .main-theme {
   position: relative;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,78 +9,6 @@
   @media (min-width: $tablet-width) {
     align-items: flex-start;
     padding: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    position: static;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-
-    width: 100%;
-    height: 302px;
-    margin-left: -160px;
-
-    background: url("../img/content/background-cat-mobile.png");
-    background-position-x: -157px;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: -2;
-
-      display: flex;
-      width: 100%;
-      height: 694px;
-      margin: 0;
-
-      background: url("../img/content/background-cat-desktop.png");
-      background-repeat: no-repeat;
-      background-position-x: -157px;
-    }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    z-index: 1;
-
-    width: 100%;
-    height: 302px;
-    margin-left: -160px;
-
-    background: $color-green-opacity;
-
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
-
-    @media (min-width: $desktop-width) {
-      content: "";
-      position: absolute;
-      top: 0;
-      left: 50%;
-      z-index: -1;
-
-      display: flex;
-      width: 100%;
-      height: 694px;
-      margin: 0;
-
-      background: $color-green-opacity;
-    }
   }
 }
 
@@ -149,12 +78,12 @@
     }
 
     @media (min-width: $desktop-width) {
-      top: 141px;
+      top: 0;
       left: 50%;
-      margin-left: -160px;
 
       width: 552px;
       height: 499px;
+      margin-left: -160px;
     }
   }
 
@@ -175,9 +104,19 @@
 
 .main-theme__link {
   z-index: 1;
+  width: 280px;
+  padding: 7px;
+
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 526px 83px;
+    width: 244px;
+    padding: 14px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {

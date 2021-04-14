@@ -1,36 +1,47 @@
 .collaboration {
-  @media (min-width: $desktop-width) {
-    position: relative;
+  position: relative;
 
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    padding: 95px 0 104px 0;
   }
 }
 
 .collaboration__wrapper {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}
+
+.collaboration__block {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 28px 20px;
+  padding: 30px 20px;
 
   @media (min-width: $tablet-width) {
     padding: 66px 71px 51px 71px;
   }
 
   @media (min-width: $desktop-width) {
-    position: absolute;
-    top: 95px;
-    right: 50%;
-    margin-right: 40px;
-
     width: 570px;
-    padding: 61px 89px 51px 76px;
+    margin: 0;
 
     background-color: $color-white;
   }
 }
 
 .collaboration__background-grey {
+  width: 100%;
+
   background-color: $color-background-grey;
 }
 
@@ -76,4 +87,13 @@
 
 .collaboration__map iframe {
   min-width: 100%;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+  }
 }
