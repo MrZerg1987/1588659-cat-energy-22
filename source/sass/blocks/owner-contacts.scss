@@ -16,7 +16,7 @@
   box-shadow: 0 0 0 20px $color-white;
 
   @media (min-width: $tablet-width) {
-    width: max-content;
+    width: 512px;
     margin: 71px 0 76px 0;
 
     font-size: 36px;
@@ -58,9 +58,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 78px;
     justify-content: space-between;
+
+    grid-column-gap: 78px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 

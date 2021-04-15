@@ -1,8 +1,14 @@
 .all {
-  width: 100%;
-
   @media (min-width: $tablet-width) {
+    height: 430px;
+    margin: 51px 0 0 0;
+    padding: 40px;
+
     border: 1px solid $color-border-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 63px 0 0 0;
   }
 }
 
@@ -26,8 +32,21 @@
   }
 }
 
-.all__svg {
+.all__svg-mobile {
   margin: 25px auto 23px auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.all__svg-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin: 0 auto 49px auto;
+  }
 }
 
 .all__invitation {
@@ -43,9 +62,10 @@
 
   @media (min-width: $tablet-width) {
     width: 134px;
+    margin: 0 auto 23px auto;
+
     font-size: 20px;
     line-height: 22px;
-    margin: 0 auto 23px auto;
   }
 }
 
@@ -62,9 +82,10 @@
 
   @media (min-width: $tablet-width) {
     width: 167px;
+    margin: 0 auto 97px auto;
+
     font-size: 16px;
     line-height: 18px;
-    margin: 0 auto 87px auto;
   }
 }
 
@@ -85,5 +106,13 @@
 
   @media (min-width: $tablet-width) {
     width: 249px;
+    padding: 10px;
+
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 168px;
   }
 }

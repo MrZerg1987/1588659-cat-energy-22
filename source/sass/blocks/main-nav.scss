@@ -30,10 +30,10 @@
 }
 
 .main-nav__list {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 
@@ -64,8 +64,9 @@
   border-top: 1px solid $color-light-grey;
 
   @media (min-width: $tablet-width) {
-    border-top: none;
     margin: 0 5px 0 0;
+
+    border-top: none;
   }
 
   &:last-child {
