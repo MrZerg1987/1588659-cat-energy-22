@@ -12,6 +12,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 25px 28px;
+
     border: 1px solid $color-special-light-grey;
   }
 
@@ -43,9 +44,10 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding: 0 0 0 60px;
+
     font-size: 20px;
     line-height: 30px;
-    padding: 0 0 0 60px;
   }
 }
 
@@ -80,9 +82,10 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    border: 10px solid $color-green;
     bottom: 7px;
     left: 11px;
+
+    border: 10px solid $color-green;
   }
 }
 

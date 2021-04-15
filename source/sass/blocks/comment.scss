@@ -16,7 +16,7 @@
   box-shadow: 0 0 0 20px $color-white;
 
   @media (min-width: $tablet-width) {
-    width: max-content;
+    width: 182px;
     margin: 65px 0 76px 0;
 
     font-size: 36px;
@@ -30,8 +30,8 @@
     position: absolute;
     top: 15px;
     left: 0;
-
     z-index: -1;
+
     width: 100%;
 
     border-bottom: 2px solid $color-green;
@@ -56,9 +56,10 @@
   border: 1px solid $color-input-grey;
 
   @media (min-width: $tablet-width) {
+    height: 174px;
+
     font-size: 20px;
     line-height: 30px;
-    height: 174px;
   }
 
   &::placeholder {
