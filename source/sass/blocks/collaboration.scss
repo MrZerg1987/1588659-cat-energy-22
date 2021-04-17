@@ -10,25 +10,26 @@
 }
 
 .collaboration__wrapper {
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    width: 768px;
+    min-width: 768px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    min-width: 1440px;
+    padding: 0 7.64%;
   }
 }
 
 .collaboration__block {
   display: flex;
   justify-content: space-between;
-  padding: 30px 20px;
+  padding: 30px 6.25%;
 
   @media (min-width: $tablet-width) {
-    padding: 66px 71px 51px 71px;
+    padding: 66px 9% 51px 9%;
   }
 
   @media (min-width: $desktop-width) {

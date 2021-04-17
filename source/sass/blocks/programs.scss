@@ -8,7 +8,7 @@
     display: grid;
 
     grid-gap: 80px;
-    grid-template-columns: 570px 570px;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -35,7 +35,6 @@
   content: "";
   position: absolute;
   top: 21px;
-  left: 22px;
 
   width: 50px;
   height: 50px;
@@ -45,11 +44,12 @@
   background-size: contain;
 
   @media (min-width: $tablet-width) {
-    top: 81px;
-    left: 446px;
+    top: 50%;
+    right: 62px;
 
     width: 200px;
     height: 211px;
+    margin-top: -100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -58,6 +58,7 @@
 
     width: 100px;
     height: 106px;
+    margin-top: 0;
   }
 }
 
@@ -65,21 +66,22 @@
   content: "";
   position: absolute;
   top: 24px;
-  left: 13px;
 
   width: 67px;
   height: 50px;
+  margin-left: -13px;
 
   background-image: url("../img/svg/muscular-cat.svg");
   background-repeat: no-repeat;
   background-size: contain;
 
   @media (min-width: $tablet-width) {
-    top: 91px;
-    left: 412px;
+    top: 50%;
+    right: 28px;
 
     width: 268px;
     height: 200px;
+    margin-top: -85px;
   }
 
   @media (min-width: $desktop-width) {
@@ -88,6 +90,7 @@
 
     width: 134px;
     height: 100px;
+    margin-top: 0;
   }
 }
 
@@ -115,7 +118,7 @@
 }
 
 .programs__description {
-  width: 227px;
+  width: 100%;
   margin: 0 0 15px 0;
   padding: 0 0 23px 0;
 
@@ -129,9 +132,8 @@
   border-bottom: 1px solid $color-special-light-grey;
 
   @media (min-width: $tablet-width) {
-    width: 377px;
     margin: 0 0 48px 0;
-    padding: 0;
+    padding: 0 240px 0 0;
 
     font-size: 16px;
     line-height: 24px;
@@ -140,8 +142,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 467px;
     margin: 0 0 23px 0;
+    padding: 0;
   }
 }
 

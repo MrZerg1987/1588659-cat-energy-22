@@ -4,7 +4,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 27px 35px;
+  padding: 27px 20px;
 
   @media (min-width: $tablet-width) {
     align-items: flex-start;
@@ -59,10 +59,11 @@
     content: "";
     position: absolute;
     top: 167px;
-    left: 7px;
+    left: center;
 
     width: 280px;
     height: 270px;
+    margin-left: -252px;
 
     background: url("../img/content/cat-food.png");
     background-repeat: no-repeat;
@@ -70,11 +71,12 @@
 
     @media (min-width: $tablet-width) {
       top: 236px;
-      left: 37px;
+      left: center;
       z-index: -1;
 
       width: 709px;
       height: 609px;
+      margin-left: -330px;
     }
 
     @media (min-width: $desktop-width) {
@@ -105,7 +107,7 @@
 .main-theme__link {
   z-index: 1;
 
-  width: 280px;
+  width: 100%;
   padding: 7px;
 
   font-size: 14px;

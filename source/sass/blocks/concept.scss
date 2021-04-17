@@ -58,6 +58,7 @@
 .concept__item {
   position: relative;
 
+  min-height: 60px;
   margin: 0 0 26px 80px;
   padding: 2px 0 0 0;
 
@@ -84,19 +85,21 @@
   }
 
   &::before {
-    content: counter(number);
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: -1;
+    @media (min-width: $tablet-width) {
+      content: counter(number);
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
 
-    font-size: 280px;
-    line-height: 280px;
-    font-family: $font-family--arial;
-    color: $color-background-grey;
+      font-size: 280px;
+      line-height: 280px;
+      font-family: $font-family--arial;
+      color: $color-background-grey;
 
-    background-repeat: no-repeat;
-    background-size: contain;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
   }
 
   &::after {
@@ -145,7 +148,7 @@
 }
 
 .concept__description {
-  width: 200px;
+  width: 100%;
   margin: 0;
   padding: 0;
 

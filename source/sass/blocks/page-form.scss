@@ -1,3 +1,9 @@
+.page-form__wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 0 9%;
+  }
+}
+
 .page-form__title {
   margin: 27px 0 37px 0;
 

@@ -1,5 +1,17 @@
 .main-nav {
   position: relative;
+
+  display: flex;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
 
 .main-nav__toggle {
@@ -31,19 +43,17 @@
 
 .main-nav__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     justify-content: space-between;
-    width: 440px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 480px;
   }
 }
 
@@ -81,7 +91,7 @@
 .main-nav__link {
   display: flex;
   justify-content: center;
-  width: 320px;
+  width: 100%;
   padding: 22px 20px 24px 20px;
 
   font-style: normal;
