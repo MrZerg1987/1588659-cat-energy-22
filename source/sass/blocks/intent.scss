@@ -71,6 +71,14 @@
   }
 }
 
+.intent__input:disabled + label {
+  opacity: 0.3;
+}
+
+.intent__input:hover + label::before {
+  border: 1px solid $color-radio-hover-grey;
+}
+
 .intent__input:checked + label::after {
   content: "";
   position: absolute;
@@ -88,12 +96,4 @@
 
     border: 10px solid $color-green;
   }
-}
-
-.intent__input:disabled + label {
-  opacity: 0.3;
-}
-
-.intent__input:hover + label::before {
-  border: 1px solid $color-radio-hover-grey;
 }
