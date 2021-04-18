@@ -35,7 +35,7 @@
 .intent__label {
   position: relative;
 
-  padding: 0 0 0 46px;
+  padding: 5px 0 5px 46px;
 
   font-style: normal;
   font-weight: 400;
@@ -44,7 +44,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 60px;
+    padding: 5px 0 5px 60px;
 
     font-size: 20px;
     line-height: 30px;
@@ -54,7 +54,7 @@
 .intent__input + label::before {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: 2px;
   left: 1px;
 
   width: 30px;
@@ -64,6 +64,7 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
+    bottom: 0;
     width: 40px;
     height: 40px;
   }
@@ -72,7 +73,7 @@
 .intent__input:checked + label::after {
   content: "";
   position: absolute;
-  bottom: 4px;
+  bottom: 9px;
   left: 8px;
 
   width: 1px;
@@ -82,7 +83,6 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    bottom: 7px;
     left: 11px;
 
     border: 10px solid $color-green;

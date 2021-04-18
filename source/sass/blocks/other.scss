@@ -68,7 +68,8 @@
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    margin: 0 79px 0 0;
+    margin: 0 75px 0 0;
+    width: 75%;
   }
 }
 
@@ -113,7 +114,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 70%;
+    width: 68%;
     margin: 0;
   }
 }
@@ -160,7 +161,7 @@
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
-    width: 50%;
+    width: 47%;
     margin: 0;
   }
 }
@@ -179,7 +180,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 244px;
+    width: 29%;
     padding: 7px;
   }
 }
@@ -212,7 +213,7 @@
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: center;
-    width: 245px;
+    width: 21%;
     height: 285px;
     margin: 0;
     padding: 42px;

@@ -72,7 +72,7 @@
 .additionally__label {
   position: relative;
 
-  padding: 0 0 0 46px;
+  padding: 5px 0 5px 46px;
 
   font-style: normal;
   font-weight: 400;
@@ -81,7 +81,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 0 0 0 59px;
+    padding: 5px 0 5px 59px;
 
     font-size: 20px;
     line-height: 30px;
@@ -91,7 +91,7 @@
 .additionally__input + label::before {
   content: "";
   position: absolute;
-  bottom: -3px;
+  bottom: 2px;
   left: 0;
 
   width: 30px;
@@ -100,6 +100,7 @@
   border: 1px solid $color-special-border-grey;
 
   @media (min-width: $tablet-width) {
+    bottom: 0;
     width: 40px;
     height: 40px;
   }
@@ -108,7 +109,7 @@
 .additionally__input:checked + label::after {
   content: "";
   position: absolute;
-  bottom: 6px;
+  bottom: 11px;
   left: 7px;
 
   width: 18px;
@@ -118,7 +119,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    bottom: 10px;
+    bottom: 13px;
     left: 11px;
   }
 }

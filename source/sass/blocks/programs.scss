@@ -148,17 +148,12 @@
 }
 
 .programs__link {
+  position: relative;
+
   display: flex;
-  width: 155px;
+  width: max-content;
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    width: 170px;
-  }
-}
-
-.programs__span {
-  padding-right: 15px;
+  padding: 5px 58px 5px 0;
 
   font-style: normal;
   font-weight: 400;
@@ -169,5 +164,29 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    margin-top: -6px;
+
+    width: 32px;
+    height: 12px;
+
+    background-image: url("../img/content/sprite-arrow.png");
+    background-position-x: -62px;
+    background-position-y: center;
+  }
+  &:hover {
+    &::after {
+      background-position-x: -10px;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }

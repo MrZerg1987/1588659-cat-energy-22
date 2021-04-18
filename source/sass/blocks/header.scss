@@ -17,6 +17,10 @@
   }
 }
 
+.header__logo-active {
+  pointer-events: none;
+}
+
 .header__logo-mobile {
   display: flex;
   justify-content: center;
@@ -39,6 +43,14 @@
 .header__logo-tablet {
   display: none;
 
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
   @media (min-width: $tablet-width) {
     display: flex;
     margin: 0;
@@ -52,6 +64,14 @@
 
 .header__logo-desktop {
   display: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;

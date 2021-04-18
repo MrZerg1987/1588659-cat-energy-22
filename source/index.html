@@ -11,7 +11,7 @@
   <body class="body">
     <div class="intro">
       <header class="header container">
-        <a class="header__logo-mobile">
+        <a class="header__logo-mobile header__logo-active">
           <img
             src="img/svg/logo-mobile.svg"
             width="280"
@@ -19,7 +19,7 @@
             alt="Логотип компании Кэт энерджи"
           />
         </a>
-        <a class="header__logo-tablet">
+        <a class="header__logo-tablet header__logo-active">
           <img
             src="img/svg/logo-tablet.svg"
             width="174"
@@ -27,7 +27,7 @@
             alt="Логотип компании Кэт энерджи"
           />
         </a>
-        <a class="header__logo-desktop">
+        <a class="header__logo-desktop header__logo-active">
           <img
             src="img/svg/logo-desktop.svg"
             width="202"
@@ -44,7 +44,7 @@
           <ul class="main-nav__list main-nav__list--open">
             <li class="main-nav__item">
               <a
-                class="main-nav__link main-nav__link--active-index main-nav__link--index"
+                class="main-nav__link main-nav__link--active-index main-nav__link--index main-nav__link--current"
               >
                 Главная
               </a>
@@ -88,23 +88,7 @@
               href="catalog.html"
               class="programs__link"
               aria-label="Открыть каталог товаров серии Slim"
-            >
-              <span class="programs__span">Каталог Slim</span>
-              <span class="programs__span">
-                <svg
-                  width="32"
-                  height="12"
-                  viewBox="0 0 32 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                  <path
-                    d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z"
-                    fill="black"
-                  />
-                </svg>
-              </span>
+              >Каталог Slim
             </a>
           </li>
           <li class="programs__item programs__item--muscle-mass">
@@ -117,23 +101,7 @@
               href="catalog.html"
               class="programs__link"
               aria-label="Открыть каталог товаров серии Pro"
-            >
-              <span class="programs__span">Каталог Pro</span>
-              <span class="programs__span">
-                <svg
-                  width="32"
-                  height="12"
-                  viewBox="0 0 32 12"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <line y1="6" x2="18" y2="6" stroke="black" stroke-width="2" />
-                  <path
-                    d="M24 6L17.25 11.1962L17.25 0.803848L24 6Z"
-                    fill="black"
-                  />
-                </svg>
-              </span>
+              >Каталог Pro
             </a>
           </li>
         </ul>
@@ -239,6 +207,14 @@
               </button>
               <div class="example__range">
                 <div class="example__selector"></div>
+                <input
+                  type="range"
+                  min="0"
+                  max="100"
+                  step="50"
+                  value="50"
+                  name="range"
+                />
               </div>
               <button
                 class="example__button"
