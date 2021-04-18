@@ -101,9 +101,14 @@
 
   @media (min-width: $tablet-width) {
     bottom: 0;
+
     width: 40px;
     height: 40px;
   }
+}
+
+.additionally__input:hover + label::before {
+  border: 1px solid $color-radio-hover-grey;
 }
 
 .additionally__input:checked + label::after {
