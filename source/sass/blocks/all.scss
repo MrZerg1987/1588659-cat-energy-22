@@ -1,14 +1,14 @@
 .all {
   @media (min-width: $tablet-width) {
     height: 430px;
-    margin: 51px 0 0 0;
+    margin: 70px 0 0 0;
     padding: 40px;
 
     border: 1px solid $color-border-grey;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 63px 0 0 0;
+    margin: 95px 0 0 0;
   }
 }
 
@@ -92,7 +92,7 @@
 .all__link {
   display: flex;
   justify-content: center;
-  width: 280px;
+  width: 100%;
   padding: 11px;
 
   font-style: normal;
@@ -105,14 +105,9 @@
   background-color: $color-background-grey;
 
   @media (min-width: $tablet-width) {
-    width: 249px;
     padding: 10px;
 
     font-size: 16px;
     line-height: 20px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 168px;
   }
 }

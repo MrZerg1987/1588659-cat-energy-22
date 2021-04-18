@@ -28,7 +28,7 @@
 
   @media (min-width: $tablet-width) {
     width: 338px;
-    margin: 68px 0 80px 0;
+    margin: 68px 0 80px 37px;
 
     font-size: 36px;
     line-height: 36px;
@@ -36,19 +36,26 @@
     box-shadow: 0 0 0 40px $color-white;
   }
 
+  @media (min-width: $desktop-width) {
+    margin: 68px 0 80px 0;
+  }
+
   &::after {
     content: "";
     position: absolute;
     top: 15px;
-    left: 0;
+    left: 10%;
     z-index: -1;
 
-    width: 100%;
+    width: 90%;
 
     border-bottom: 2px solid $color-green;
 
     @media (min-width: $tablet-width) {
       top: 22px;
+      left: 0;
+
+      width: 100%;
     }
   }
 }
@@ -61,11 +68,8 @@
   list-style: none;
 
   @media (min-width: $desktop-width) {
-    margin: 0 79px 0 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    // width: 896px;
+    margin: 0 75px 0 0;
+    width: 75%;
   }
 }
 
@@ -110,7 +114,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 613px;
+    width: 68%;
     margin: 0;
   }
 }
@@ -148,31 +152,35 @@
   color: $color-dark-grey;
 
   @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    width: 40%;
+
     font-size: 16px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
+    justify-content: space-between;
+    width: 47%;
     margin: 0;
   }
 }
 
 .other__link {
-  width: 280px;
+  width: 100%;
   padding: 10px;
 
   font-size: 16px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 632px;
     padding: 6px;
 
     line-height: 26px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 244px;
+    width: 29%;
     padding: 7px;
   }
 }
@@ -191,6 +199,8 @@
   background-color: $color-green;
   background-image: url("../img/content/present-background.png");
   background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
   background-size: cover;
 
   @media (min-width: $tablet-width) {
@@ -198,21 +208,15 @@
     justify-content: space-between;
     height: 200px;
     margin: 39px 0 76px 0;
-
-    background-position-x: center;
-    background-position-y: -330px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     align-items: center;
-    width: 245px;
+    width: 21%;
     height: 285px;
     margin: 0;
     padding: 42px;
-
-    background-position-x: -40px;
-    background-position-y: -30px;
   }
 }
 

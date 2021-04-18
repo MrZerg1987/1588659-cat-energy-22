@@ -53,9 +53,9 @@
     content: "";
     position: absolute;
     top: 0;
-    left: -20px;
+    left: -7%;
 
-    width: 320px;
+    width: 114%;
 
     border-top: 1px solid $color-border-grey;
 
@@ -68,6 +68,7 @@
 .products__card {
   display: flex;
   flex-direction: row;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -75,13 +76,21 @@
   }
 }
 
-.products__foto {
-  position: relative;
+.products__foto-block {
+  display: flex;
+  align-items: center;
+  width: 50%;
 
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+}
+
+.products__foto {
   display: flex;
   justify-content: center;
-  align-items: center;
-  width: 140px;
+  width: 100%;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 34px 0;
@@ -91,20 +100,27 @@
 .products__description {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  align-items: flex-start;
+  width: 50%;
+
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    align-items: center;
+    width: 100%;
+  }
 }
 
 .products__name {
-  position: relative;
-
   width: 76px;
   margin: 0 0 18px 0;
+  padding: 5px 0;
 
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+  text-align: left;
   color: $color-special-black;
   text-transform: uppercase;
 
@@ -121,7 +137,7 @@
 .products__info-block {
   display: flex;
   flex-direction: column;
-  width: 142px;
+  width: 100%;
   padding: 0 0 9px 0;
 
   font-style: normal;
@@ -132,20 +148,15 @@
   color: $color-dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-
     font-size: 16px;
     line-height: 32px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 168px;
   }
 }
 
 .products__info-string {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   margin: 0;
   padding: 0;
 
@@ -166,7 +177,7 @@
 }
 
 .products__link {
-  width: 280px;
+  width: 100%;
   margin: 13px 0 0 0;
   padding: 10px;
 
@@ -174,11 +185,6 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 248px;
     margin: 32px 0 0 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 168px;
   }
 }

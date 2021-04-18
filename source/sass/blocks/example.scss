@@ -47,7 +47,6 @@
 }
 
 .example__description {
-  width: 280px;
   margin: 0 0 26px 0;
   padding: 0;
 
@@ -59,14 +58,11 @@
   color: $color-dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 700px;
-
     font-size: 16px;
     line-height: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 436px;
     margin: 0 0 69px 0;
   }
 }
@@ -109,7 +105,7 @@
 }
 
 .example__button {
-  padding: 7px 0;
+  padding: 7px;
 
   font-style: normal;
   font-weight: 400;
@@ -120,11 +116,18 @@
 
   background-color: transparent;
   border: 0;
-  outline: none;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     border-bottom: 1px dotted $color-dark-grey;
+
+    &:hover {
+      border-bottom: 1px solid $color-dark-grey;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -134,42 +137,64 @@
 }
 
 .example__range {
-  position: relative;
-
-  width: 84px;
-  height: 14px;
   margin: 0 12px;
 
-  background: $color-white;
-  border: 1px solid $color-special-border-grey;
-  border-radius: 10px;
+  input[type="range"] {
+    width: 84px;
+    height: 14px;
 
-  @media (min-width: $tablet-width) {
-    width: 428px;
-    height: 6px;
+    background: $color-white;
+    border: 1px solid $color-special-border-grey;
+    border-radius: 10px;
 
-    background: $color-special-border-grey;
+    appearance: none;
+
+    @media (min-width: $tablet-width) {
+      width: 428px;
+      height: 6px;
+
+      background: $color-special-border-grey;
+    }
   }
-}
 
-.example__selector {
-  width: 50%;
-  height: 6px;
-  margin: 3px 5px;
+  input[type="range"]::-webkit-slider-runnable-track {
+    border-radius: 5px;
+    height: 6px;
+    margin: 5px;
 
-  background: $color-green;
-  border-radius: 5px;
+    @media (min-width: $tablet-width) {
+      height: 34px;
+      margin: 0;
+      border-radius: 34px;
+    }
+  }
 
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    top: -17px;
-    left: 45%;
+  input[type="range"]::-webkit-slider-thumb {
+    appearance: none;
+    border-radius: 5px;
+    width: 50%;
+    height: 6px;
+    background-color: $color-green;
 
-    box-sizing: content-box;
-    width: 8px;
-    height: 8px;
+    @media (min-width: $tablet-width) {
+      box-sizing: content-box;
+      width: 8px;
+      height: 8px;
 
-    border: 13px solid $color-white;
-    border-radius: 50%;
+      border: 13px solid $color-white;
+      box-shadow: 0 0 0 1px $color-special-border-grey;
+      border-radius: 50%;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 0 1px $color-special-border-grey,
+          0 3px 3px 1px $color-special-border-grey;
+      }
+
+      &:active {
+        box-shadow: 0 0 0 1px $color-green,
+          0 3px 3px 1px $color-special-border-grey;
+      }
+    }
   }
 }

@@ -1,5 +1,17 @@
 .main-nav {
   position: relative;
+
+  display: flex;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    width: 440px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 480px;
+  }
 }
 
 .main-nav__toggle {
@@ -13,7 +25,6 @@
   background-color: transparent;
   background-repeat: no-repeat;
   border: 0;
-  outline: none;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
@@ -31,19 +42,18 @@
 
 .main-nav__list {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
+  width: 100%;
   margin: 0;
   padding: 0;
 
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    flex-direction: row;
     justify-content: space-between;
-    width: 440px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 480px;
+    margin: 10px 0 0 0;
   }
 }
 
@@ -78,10 +88,14 @@
   }
 }
 
+.main-nav__link--current {
+  pointer-events: none;
+}
+
 .main-nav__link {
   display: flex;
   justify-content: center;
-  width: 320px;
+  width: 100%;
   padding: 22px 20px 24px 20px;
 
   font-style: normal;
@@ -90,10 +104,18 @@
   line-height: 20px;
   text-transform: uppercase;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     width: max-content;
-    padding: 20px 0 10px 0;
+    padding: 10px 0;
 
     font-weight: 400;
     font-size: 18px;
