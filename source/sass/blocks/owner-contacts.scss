@@ -114,6 +114,26 @@
 
   border: 1px solid $color-input-grey;
 
+  &:hover {
+    border: 1px solid $color-special-border-grey;
+  }
+
+  &:focus {
+    border: 2px solid $color-dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $color-error-red;
+  }
+
+  &:focus + svg {
+    color: $color-green;
+  }
+
+  &:invalid + svg {
+    color: $color-error-red;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -122,27 +142,4 @@
   &::placeholder {
     color: $color-dark-grey;
   }
-}
-
-.form-products-search svg {
-  position: absolute;
-  top: 12px;
-  left: 17px;
-
-  width: 17px;
-  height: 17px;
-
-  opacity: 0.3;
-
-  fill: var(--basic-white);
-}
-
-.products-search:hover + svg {
-  opacity: 1;
-}
-
-.products-search:focus + svg {
-  opacity: 1;
-
-  fill: var(--basic-red);
 }

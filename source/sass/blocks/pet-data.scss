@@ -67,6 +67,18 @@
 
   border: 1px solid $color-input-grey;
 
+  &:hover {
+    border: 1px solid $color-special-border-grey;
+  }
+
+  &:focus {
+    border: 2px solid $color-dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $color-error-red;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 10px 15px;
 

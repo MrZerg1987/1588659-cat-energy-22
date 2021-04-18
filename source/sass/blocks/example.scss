@@ -158,23 +158,27 @@
   }
 
   input[type="range"]::-webkit-slider-runnable-track {
-    border-radius: 5px;
     height: 6px;
     margin: 5px;
+
+    border-radius: 5px;
 
     @media (min-width: $tablet-width) {
       height: 34px;
       margin: 0;
+
       border-radius: 34px;
     }
   }
 
   input[type="range"]::-webkit-slider-thumb {
-    appearance: none;
-    border-radius: 5px;
     width: 50%;
     height: 6px;
+
     background-color: $color-green;
+    border-radius: 5px;
+
+    appearance: none;
 
     @media (min-width: $tablet-width) {
       box-sizing: content-box;
@@ -182,8 +186,8 @@
       height: 8px;
 
       border: 13px solid $color-white;
-      box-shadow: 0 0 0 1px $color-special-border-grey;
       border-radius: 50%;
+      box-shadow: 0 0 0 1px $color-special-border-grey;
       cursor: pointer;
 
       &:hover {
