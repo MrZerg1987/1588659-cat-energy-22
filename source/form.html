@@ -4,35 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="source/img/favicon/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="source/img/favicon/152.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <link rel="stylesheet" href="css/style.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
   <body class="body">
     <header class="header container">
-      <a href="index.html" class="header__logo-mobile">
-        <img
-          src="img/svg/logo-mobile.svg"
-          width="280"
-          height="38"
-          alt="Логотип компании Кэт энерджи"
-        />
-      </a>
-      <a href="index.html" class="header__logo-tablet">
-        <img
-          src="img/svg/logo-tablet.svg"
-          width="174"
-          height="52"
-          alt="Логотип компании Кэт энерджи"
-        />
-      </a>
-      <a href="index.html" class="header__logo-desktop">
-        <img
-          src="img/svg/logo-desktop.svg"
-          width="202"
-          height="59"
-          alt="Логотип компании Кэт энерджи"
-        />
+      <a href="index.html" class="header__logo">
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="img/svg/logo-desktop.svg"
+          />
+          <source media="(min-width: 768px)" srcset="img/svg/logo-tablet.svg" />
+          <img
+            src="img/svg/logo-mobile.svg"
+            alt="Логотип компании Кэт энерджи"
+          />
+        </picture>
       </a>
       <nav class="main-nav">
         <button

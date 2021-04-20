@@ -13,15 +13,20 @@
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     width: 129px;
+    margin-left: 33px;
 
     border-top: none;
     border-bottom: none;
   }
 }
 
+.social-list__item:first-child {
+  margin: 0 4px 0 -6px;
+}
+
 .social-list__svg {
   display: flex;
-  padding: 18px;
+  padding: 20px 16px;
 
   color: $color-speсial-dark-grey;
 

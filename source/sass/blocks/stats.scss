@@ -30,14 +30,15 @@
   justify-content: center;
   width: 124px;
   margin: 0 31px 0 0;
-  padding: 15px 0 0 0;
+  padding: 13px 0 0 0;
 
   &:last-child {
     margin: 0;
   }
 
   @media (min-width: $tablet-width) {
-    width: 162px;
+    width: 166px;
+    margin: 0 43px 0 0;
     padding: 0;
   }
 
@@ -55,29 +56,34 @@
 
     @media (min-width: $tablet-width) {
       width: 162px;
-      height: 77px;
+      height: 72px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -3px;
     }
   }
 }
 
 .stats__value {
-  margin: 0 0 5px 0;
+  margin: 0 0 9px 0;
 
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin: 0 0 2px 0;
+    margin: 0 0 15px 0;
 
     font-size: 30px;
-    line-height: 37px;
+    line-height: 14px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 18px 0 7px 0;
+    margin: 24px 0 15px 0;
   }
 }
 
@@ -86,6 +92,7 @@
 
   width: 82px;
   margin: 0 auto;
+  padding-right: 2px;
 
   font-style: normal;
   font-weight: 400;
@@ -113,12 +120,13 @@
 }
 
 .stats__total {
-  margin: 20px 0 44px 0;
+  margin: 19px 0 44px 0;
 
   text-align: center;
 
   @media (min-width: $tablet-width) {
     text-align: right;
+    margin: 6px 0 44px 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -138,19 +146,19 @@
     width: 175px;
 
     font-size: 20px;
-    line-height: 25px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
     width: max-content;
-    margin: 50px 0 0 0;
+    margin: 42px 0 0 0;
   }
 }
 
 .stats__total-value {
-  padding: 0 0 0 5px;
+  padding: 0;
 
   @media (min-width: $desktop-width) {
-    margin: 0 0 0 63px;
+    margin: 0 0 0 59px;
   }
 }
