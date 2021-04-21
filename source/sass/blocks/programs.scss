@@ -46,7 +46,8 @@
 
   @media (min-width: $tablet-width) {
     top: 50%;
-    left: 448px;
+    left: auto;
+    right: 61px;
 
     width: 200px;
     height: 210px;
@@ -79,7 +80,8 @@
 
   @media (min-width: $tablet-width) {
     top: 50%;
-    left: 425px;
+    left: auto;
+    right: 28px;
 
     width: 268px;
     height: 200px;

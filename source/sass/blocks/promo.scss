@@ -59,7 +59,8 @@
     content: "";
     position: absolute;
     top: 165px;
-    left: 0;
+    left: 50%;
+    margin-left: -140px;
 
     width: 280px;
     height: 270px;
@@ -67,7 +68,6 @@
     background: url("../img/content/cat-food-mobile@1x.png");
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-x: 20px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/content/cat-food-mobile@2x.png");
@@ -75,8 +75,8 @@
 
     @media (min-width: $tablet-width) {
       top: 240px;
-      left: 29px;
       z-index: -1;
+      margin-left: -354px;
 
       width: 709px;
       height: 609px;
