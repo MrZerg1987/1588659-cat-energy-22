@@ -17,7 +17,7 @@
 .main-nav__toggle {
   position: absolute;
   top: -45px;
-  right: 23px;
+  right: 22px;
 
   width: 20px;
   height: 20px;
@@ -83,6 +83,7 @@
     border-bottom: 1px solid $color-light-grey;
 
     @media (min-width: $tablet-width) {
+      margin: 0;
       border-bottom: none;
     }
   }
@@ -92,7 +93,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 22px 20px 24px 20px;
+  padding: 21px 21px 24px 20px;
 
   font-style: normal;
   font-weight: 500;
@@ -121,6 +122,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
     line-height: 30px;
+    padding: 6px 0;
   }
 }
 
@@ -133,6 +135,8 @@
 }
 
 .main-nav__link--active-index {
+  pointer-events: none;
+
   @media (min-width: $tablet-width) {
     border-bottom: 2px solid $color-green;
   }

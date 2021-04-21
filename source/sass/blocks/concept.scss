@@ -1,6 +1,9 @@
 .concept {
+  padding-bottom: 22px;
+
   @media (min-width: $tablet-width) {
     border-bottom: 1px solid $color-light-grey;
+    padding-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -40,17 +43,19 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    margin: 0 25px 0 0;
+    width: 708px;
+    margin: 0 auto;
 
-    grid-column-gap: 153px;
-    grid-row-gap: 37px;
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    width: 1220px;
+    margin: 0 auto;
 
-    grid-column-gap: 53px;
+    grid-column-gap: 60px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -59,7 +64,7 @@
   position: relative;
 
   min-height: 60px;
-  margin: 0 0 26px 80px;
+  margin: 0 0 20px 80px;
   padding: 2px 0 0 0;
 
   font-style: normal;
@@ -74,7 +79,7 @@
   @media (min-width: $tablet-width) {
     width: 265px;
     margin: 0;
-    padding: 111px 0 57px 0;
+    padding: 111px 0 44px 0;
 
     font-size: 16px;
     line-height: 24px;
@@ -88,13 +93,13 @@
     @media (min-width: $tablet-width) {
       content: counter(number);
       position: absolute;
-      top: 0;
-      right: 0;
+      top: -40px;
+      right: 20px;
       z-index: -1;
 
       font-size: 280px;
       line-height: 280px;
-      font-family: $font-family--arial;
+      font-family: $font-family--oswald;
       color: $color-background-grey;
 
       background-repeat: no-repeat;
@@ -125,25 +130,41 @@
 
 .concept__item--leaf {
   &::after {
-    background-image: url("../img/svg/leaf.svg");
+    background-image: url("../img/svg/leaf-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/svg/leaf-tablet.svg");
+    }
   }
 }
 
 .concept__item--glass {
   &::after {
-    background-image: url("../img/svg/glass.svg");
+    background-image: url("../img/svg/glass-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/svg/glass-tablet.svg");
+    }
   }
 }
 
 .concept__item--fork {
   &::after {
-    background-image: url("../img/svg/fork.svg");
+    background-image: url("../img/svg/fork-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/svg/fork-tablet.svg");
+    }
   }
 }
 
 .concept__item--alarm {
   &::after {
-    background-image: url("../img/svg/alarm.svg");
+    background-image: url("../img/svg/alarm-mobile.svg");
+
+    @media (min-width: $tablet-width) {
+      background-image: url("../img/svg/alarm-tablet.svg");
+    }
   }
 }
 

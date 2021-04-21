@@ -1,0 +1,145 @@
+.promo {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 6.25%;
+
+  @media (min-width: $tablet-width) {
+    align-items: flex-start;
+    padding: 0;
+  }
+}
+
+.promo__title {
+  z-index: 1;
+
+  width: 249px;
+  margin: 0 0 24px 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: $color-white;
+
+  @media (min-width: $tablet-width) {
+    width: 414px;
+    margin: 40px 0 41px 116px;
+    padding: 0;
+
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 61px 0 40px 190px;
+  }
+}
+
+.promo__description {
+  z-index: 1;
+
+  width: 198px;
+  margin: 0 0 302px 0;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-align: center;
+  color: $color-white;
+  text-transform: uppercase;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 165px;
+    left: 50%;
+    margin-left: -140px;
+
+    width: 280px;
+    height: 270px;
+
+    background: url("../img/content/cat-food-mobile@1x.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/content/cat-food-mobile@2x.png");
+    }
+
+    @media (min-width: $tablet-width) {
+      top: 240px;
+      z-index: -1;
+      margin-left: -354px;
+
+      width: 709px;
+      height: 609px;
+
+      background: url("../img/content/cat-food-tablet@1x.png");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/content/cat-food-tablet@2x.png");
+        background-size: contain;
+      }
+    }
+
+    @media (min-width: $desktop-width) {
+      top: -20px;
+      left: 50%;
+
+      width: 552px;
+      height: 499px;
+      margin-left: -160px;
+
+      background: url("../img/content/cat-food-desktop@1x.png");
+
+      @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        background-image: url("../img/content/cat-food-desktop@2x.png");
+        background-size: contain;
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 283px;
+    margin: 0 0 49px 118px;
+
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: $color-black;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 52px 190px;
+  }
+}
+
+.promo__link {
+  z-index: 1;
+
+  width: 100%;
+  padding: 11px;
+
+  font-size: 14px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 244px;
+    margin: 0 0 526px 113px;
+    padding: 17px;
+
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 267px 190px;
+  }
+}
