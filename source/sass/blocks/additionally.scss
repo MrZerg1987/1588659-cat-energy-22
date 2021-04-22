@@ -4,7 +4,7 @@
 
 .additionally__title {
   width: 141px;
-  margin: 23px 0 34px 0;
+  margin: 20px 0 40px 0;
   padding: 0;
 
   font-style: normal;
@@ -13,16 +13,20 @@
   line-height: 26px;
 
   background-color: $color-white;
-  box-shadow: 0 0 0 20px $color-white;
+  box-shadow: 0 0 0 23px $color-white;
 
   @media (min-width: $tablet-width) {
     width: 211px;
-    margin: 65px 0 57px 0;
+    margin: 63px 0 62px 0;
 
     font-size: 36px;
     line-height: 36px;
 
-    box-shadow: 0 0 0 40px $color-white;
+    box-shadow: 0 0 0 41px $color-white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 66px 0 61px 0;
   }
 
   &::after {
@@ -53,18 +57,19 @@
   list-style: none;
   color: $color-dark-grey;
 
-  grid-row-gap: 28px;
+  grid-row-gap: 24px;
   grid-template-columns: 1fr;
 
   @media (min-width: $tablet-width) {
-    grid-row-gap: 32px;
+    grid-row-gap: 42px;
+    grid-column-gap: 60px;
     grid-template-columns: 1fr 1fr;
   }
 
   @media (min-width: $desktop-width) {
     justify-content: space-between;
 
-    grid-column-gap: 104px;
+    grid-column-gap: 80px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
@@ -85,6 +90,10 @@
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 15px;
   }
 }
 
