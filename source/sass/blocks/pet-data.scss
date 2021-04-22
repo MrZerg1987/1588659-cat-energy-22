@@ -8,13 +8,17 @@
   list-style: none;
   color: $color-dark-grey;
 
-  grid-row-gap: 13px;
+  grid-row-gap: 12px;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 72px 0;
     padding: 0;
 
     grid-row-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 
   &::after {
@@ -47,10 +51,11 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  grid-column-gap: 15px;
+  grid-column-gap: 14px;
   grid-template-columns: max-content 1fr;
 
   @media (min-width: $tablet-width) {
+    grid-column-gap: 21px;
     font-size: 20px;
     line-height: 30px;
   }

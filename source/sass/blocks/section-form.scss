@@ -14,24 +14,30 @@
 .section-form__result {
   display: flex;
   flex-direction: column;
-  margin: 34px auto 32px auto;
+  margin: 41px auto 32px auto;
 
   @media (min-width: $tablet-width) {
+    margin: 61px auto 75px auto;
     flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 66px auto 84px auto;
   }
 }
 
 .section-form__button-result {
-  width: 280px;
-  padding: 8px;
+  width: 100%;
+  padding: 10px;
 
   font-size: 16px;
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 282px;
-    margin: 54px 0 72px 0;
-    padding: 13px;
+    width: 284px;
+    margin: 0;
+    padding: 15px;
+    font-size: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -50,10 +56,14 @@
 
   @media (min-width: $tablet-width) {
     align-self: center;
-    width: 210px;
-    margin: 0 46px 18px 46px;
-    padding: 15px;
+    width: 215px;
+    margin: 0 46px;
+    padding: 17px;
 
     font-size: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 65px;
   }
 }

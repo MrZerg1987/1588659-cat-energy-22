@@ -12,7 +12,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    width: 129px;
+    width: 124px;
     margin-left: 33px;
 
     border-top: none;
@@ -20,11 +20,57 @@
   }
 }
 
-.social-list__item:first-child {
-  margin: 0 4px 0 -6px;
+.social-list__item {
+  &:nth-child(1) svg {
+    width: 23px;
+    height: 16px;
+    margin: 1px 4px 0 -6px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 4px -7px;
+      width: 30px;
+      height: 22px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 4px 7px -6px;
+    }
+  }
+
+  &:nth-child(2) svg {
+    width: 16px;
+    height: 16px;
+    margin: 4px 0 0 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 0 7px;
+      width: 23px;
+      height: 23px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 0 4px 4px;
+    }
+  }
+
+  &:nth-child(3) svg {
+    width: 22px;
+    height: 22px;
+    margin: 0 -2px 0 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 0 0 2px 0;
+      width: 32px;
+      height: 32px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 0 -1px 5px 0;
+    }
+  }
 }
 
-.social-list__svg {
+.social-list__link {
   display: flex;
   padding: 20px 16px;
 
