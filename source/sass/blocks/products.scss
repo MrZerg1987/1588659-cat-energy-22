@@ -171,9 +171,10 @@
   color: $color-dark-grey;
 
   @media (min-width: $tablet-width) {
+    padding: 0 0 2px 0;
+
     font-size: 16px;
     line-height: 31px;
-    padding: 0 0 2px 0;
   }
 }
 

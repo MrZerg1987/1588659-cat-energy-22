@@ -55,9 +55,10 @@
   grid-template-columns: max-content 1fr;
 
   @media (min-width: $tablet-width) {
-    grid-column-gap: 21px;
     font-size: 20px;
     line-height: 30px;
+
+    grid-column-gap: 21px;
   }
 }
 

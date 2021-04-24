@@ -11,15 +11,17 @@
   grid-row-gap: 24px;
 
   @media (min-width: $tablet-width) {
-    grid-row-gap: 23px;
     padding: 30px 28px;
 
     border: 1px solid $color-special-light-grey;
+
+    grid-row-gap: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    grid-row-gap: 22px;
     padding: 30px 28px;
+
+    grid-row-gap: 22px;
   }
 
   &::after {

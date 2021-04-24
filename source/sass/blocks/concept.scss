@@ -2,8 +2,9 @@
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
-    border-bottom: 1px solid $color-light-grey;
     padding-bottom: 0;
+
+    border-bottom: 1px solid $color-light-grey;
   }
 
   @media (min-width: $desktop-width) {
