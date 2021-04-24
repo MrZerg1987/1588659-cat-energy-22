@@ -84,6 +84,7 @@
 
     @media (min-width: $tablet-width) {
       margin: 0;
+
       border-bottom: none;
     }
   }
@@ -120,9 +121,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 6px 0;
+
     font-size: 20px;
     line-height: 30px;
-    padding: 6px 0;
   }
 }
 

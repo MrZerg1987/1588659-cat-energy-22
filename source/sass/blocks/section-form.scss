@@ -17,8 +17,8 @@
   margin: 41px auto 32px auto;
 
   @media (min-width: $tablet-width) {
-    margin: 61px auto 75px auto;
     flex-direction: row;
+    margin: 61px auto 75px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -37,6 +37,7 @@
     width: 284px;
     margin: 0;
     padding: 15px;
+
     font-size: 20px;
   }
 
