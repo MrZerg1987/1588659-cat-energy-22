@@ -50,7 +50,7 @@
 }
 
 .collaboration__slogan {
-  width: 140px;
+  width: 45%;
   margin: 0;
 
   font-style: normal;
@@ -60,7 +60,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    width: 171px;
+    width: 30%;
 
     font-size: 20px;
     line-height: 25px;
@@ -71,7 +71,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 140px;
+  width: 50%;
 
   font-style: normal;
   font-weight: 400;
@@ -81,8 +81,7 @@
   color: $color-dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 159px;
-    height: 80px;
+    width: 30%;
     margin-top: -2px;
 
     font-size: 16px;
@@ -90,6 +89,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 40%;
     text-align: left;
   }
 }
@@ -102,12 +102,12 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 400px;
-    width: 100%;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+
+    width: 100%;
   }
 
   iframe {

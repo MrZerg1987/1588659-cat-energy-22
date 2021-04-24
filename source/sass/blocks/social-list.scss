@@ -1,5 +1,6 @@
 .social-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -12,7 +13,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    width: 124px;
+    width: 110px;
     margin-left: 33px;
 
     border-top: none;
