@@ -68,6 +68,10 @@
 
 .main-nav__list--close {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .main-nav__item {
