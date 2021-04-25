@@ -52,7 +52,7 @@
   }
 }
 
-.all__svg-mobile {
+.all__img-mobile {
   margin: 25px auto;
 
   @media (min-width: $tablet-width) {
@@ -60,7 +60,7 @@
   }
 }
 
-.all__svg-tablet {
+.all__img-tablet {
   display: none;
 
   @media (min-width: $tablet-width) {
