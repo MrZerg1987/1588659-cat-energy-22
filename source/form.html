@@ -10,12 +10,16 @@
     <link rel="apple-touch-icon" href="favicon/152.png" />
     <link rel="manifest" href="favicon/manifest.webmanifest" />
 
+    <link rel="preload" href="fonts/oswaldregular.woff" as="font" />
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" />
+    <link rel="preload" href="fonts/oswaldmedium.woff" as="font" />
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" />
+
     <link rel="stylesheet" href="css/style.min.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
 
   <body class="body">
-
     <header class="header container">
       <a href="index.html" class="header__logo">
         <picture>
@@ -32,7 +36,7 @@
       </a>
       <nav class="main-nav">
         <button
-          class="main-nav__toggle main-nav__toggle--open"
+          class="main-nav__toggle main-nav__toggle--close"
           type="button"
           aria-label="Открыть/закрыть меню"
         ></button>
@@ -356,5 +360,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
