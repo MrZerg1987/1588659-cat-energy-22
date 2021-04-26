@@ -10,22 +10,11 @@
   @media (min-width: $tablet-width) {
     padding: 43px 0 71px 0;
 
-    background-color: $color-white;
-    box-shadow: inset 0 -463px 0 0 $color-background-grey;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 0 68px 0;
-
-    &::after {
-      content: "";
-      position: absolute;
-      width: 395px;
-      height: 463px;
-      bottom: 0;
-      right: 0;
-      background-color: $color-special-background-grey;
-    }
   }
 }
 
@@ -33,6 +22,34 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+.example__inner {
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+
+    width: 100%;
+    height: 463px;
+
+    background-color: $color-background-grey;
+  }
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      width: 454px;
+      height: 463px;
+
+      background-color: $color-special-background-grey;
+    }
   }
 }
 
@@ -81,40 +98,100 @@
 }
 
 .example__foto {
-  width: 251px;
+  width: 311px;
+  height: 232px;
   margin: 0 auto 17px auto;
 
   @media (min-width: $tablet-width) {
+    position: relative;
+
     width: 708px;
     height: 530px;
     margin: 45px auto 0 auto;
   }
 
   @media (min-width: $desktop-width) {
-    width: 545px;
+    width: 690px;
     height: 536px;
     margin: 10px auto 14px auto;
   }
 }
 
 .example__img {
-  img {
-    z-index: 1;
-  }
+  display: flex;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    bottom: 0;
+
+    height: 100%;
     margin-left: 53px;
+    margin-left: 0;
+
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-left: 0;
+  img {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
   }
 }
 
-.example__img-disable {
+.example__img--before {
+  @media (min-width: $tablet-width) {
+    left: 0;
+
+    width: 100%;
+
+    background-image: url("../img/content/fat-cat-tablet@1x.png");
+    background-position-x: -25px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/content/fat-cat-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/content/fat-cat-desktop@1x.png");
+    background-position-x: -35px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/content/fat-cat-desktop@2x.png");
+    }
+  }
+}
+
+.example__img--after {
+  @media (min-width: $tablet-width) {
+    right: 10%;
+
+    width: 80%;
+
+    background-image: url("../img/content/slim-cat-tablet@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/content/slim-cat-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/content/slim-cat-desktop@1x.png");
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/content/slim-cat-desktop@2x.png");
+    }
+  }
+}
+
+.example__img--disabled {
   display: none;
+
+  // @media (min-width: $tablet-width) {
+  //   display: flex;
+  // }
 }
 
 .example__buttons {
@@ -127,7 +204,6 @@
 
 .example__button {
   padding: 7px 0;
-  z-index: 1;
 
   font-style: normal;
   font-weight: 400;
@@ -165,7 +241,6 @@
 
 .example__range {
   margin: 0 15px 0 18px;
-  z-index: 1;
 
   @media (min-width: $tablet-width) {
     margin: -4px 20px 0 25px;

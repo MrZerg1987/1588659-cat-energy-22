@@ -141,137 +141,105 @@
       </section>
 
       <section class="example">
-        <div class="container example__blocks">
-          <div class="example__block-left">
-            <h2 class="example__title">Живой пример</h2>
-            <p class="example__description">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов
-              в день.
-            </p>
-            <div class="stats">
-              <div class="stats__list">
-                <dl class="stats__item">
-                  <dt class="stats__value">5 кг</dt>
-                  <dd class="stats__description">снижение веса</dd>
-                </dl>
-                <dl class="stats__item">
-                  <dt class="stats__value">60 дней</dt>
-                  <dd class="stats__description">затрачено времени</dd>
-                </dl>
+        <div class="container">
+          <div class="example__blocks">
+            <div class="example__block-left">
+              <h2 class="example__title">Живой пример</h2>
+              <p class="example__description">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+                на Cat Energy Slim. Отличный результат без изнуряющих
+                тренировок! При этом он не менял своих привычек и по-прежнему
+                спит по 16 часов в день.
+              </p>
+              <div class="stats">
+                <div class="stats__list">
+                  <dl class="stats__item">
+                    <dt class="stats__value">5 кг</dt>
+                    <dd class="stats__description">снижение веса</dd>
+                  </dl>
+                  <dl class="stats__item">
+                    <dt class="stats__value">60 дней</dt>
+                    <dd class="stats__description">затрачено времени</dd>
+                  </dl>
+                </div>
+                <div class="stats__total">
+                  <p class="stats__total-description">
+                    затраты на питание:
+                    <span class="stats__total-value"> 15 000 РУБ. </span>
+                  </p>
+                </div>
               </div>
-              <div class="stats__total">
-                <p class="stats__total-description">
-                  затраты на питание:
-                  <span class="stats__total-value"> 15 000 РУБ. </span>
-                </p>
+            </div>
+            <div class="example__block-right">
+              <div class="example__foto">
+                <picture class="example__img example__img--before">
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/content/fat-cat-mobile@1x.webp 1x,
+                      img/content/fat-cat-mobile@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="img/content/fat-cat-mobile@1x.png"
+                    srcset="
+                      img/content/fat-cat-mobile@1x.png 1x,
+                      img/content/fat-cat-mobile@2x.png 2x
+                    "
+                    alt="Фотография толстого кота"
+                  />
+                </picture>
+                <picture
+                  class="example__img example__img--after example__img--disabled"
+                >
+                  <source
+                    type="image/webp"
+                    srcset="
+                      img/content/slim-cat-mobile@1x.webp 1x,
+                      img/content/slim-cat-mobile@2x.webp 2x
+                    "
+                  />
+                  <img
+                    src="img/content/slim-cat-mobile@1x.png"
+                    srcset="
+                      img/content/slim-cat-mobile@1x.png 1x,
+                      img/content/slim-cat-mobile@2x.png 2x
+                    "
+                    alt="Фотография толстого кота"
+                  />
+                </picture>
+              </div>
+              <div class="example__buttons">
+                <button
+                  class="example__button example__button--before"
+                  type="button"
+                  aria-label="Кнопка переключения картинки: 'Было'"
+                >
+                  Было
+                </button>
+                <div class="example__range">
+                  <div class="example__selector"></div>
+                  <input
+                    class="example__input"
+                    type="range"
+                    min="0"
+                    max="100"
+                    step="1"
+                    value="50"
+                    name="range"
+                  />
+                </div>
+                <button
+                  class="example__button example__button--after"
+                  type="button"
+                  aria-label="Кнопка переключения картинки: 'Стало'"
+                >
+                  Стало
+                </button>
               </div>
             </div>
           </div>
-          <div class="example__block-right">
-            <div class="example__foto">
-              <picture class="example__img example__img-disable">
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/content/fat-cat-desktop@1x.webp 1x,
-                    img/content/fat-cat-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/content/fat-cat-tablet@1x.webp 1x,
-                    img/content/fat-cat-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/content/fat-cat-mobile@1x.webp 1x,
-                    img/content/fat-cat-mobile@2x.webp 2x
-                  "
-                />
-
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/content/fat-cat-desktop@1x.png 1x,
-                    img/content/fat-cat-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/content/fat-cat-tablet@1x.png 1x,
-                    img/content/fat-cat-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  src="img/content/fat-cat-mobile@1x.png"
-                  srcset="
-                    img/content/fat-cat-mobile@1x.png 1x,
-                    img/content/fat-cat-mobile@2x.png 2x
-                  "
-                  alt="Фотография толстого кота"
-                />
-              </picture>
-              <picture class="example__img">
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/content/slim-cat-desktop@1x.png 1x,
-                    img/content/slim-cat-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/content/slim-cat-tablet@1x.png 1x,
-                    img/content/slim-cat-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  src="img/content/slim-cat-mobile@1x.png"
-                  srcset="
-                    img/content/slim-cat-mobile@1x.png 1x,
-                    img/content/slim-cat-mobile@2x.png 2x
-                  "
-                  alt="Фотография толстого кота"
-                />
-              </picture>
-            </div>
-            <div class="example__buttons">
-              <button
-                class="example__button"
-                type="button"
-                aria-label="Кнопка переключения картинки: 'Было'"
-              >
-                Было
-              </button>
-              <div class="example__range">
-                <div class="example__selector"></div>
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  step="1"
-                  value="50"
-                  name="range"
-                />
-              </div>
-              <button
-                class="example__button"
-                type="button"
-                aria-label="Кнопка переключения картинки: 'Стало'"
-              >
-                Стало
-              </button>
-            </div>
-          </div>
+          <div class="example__inner"></div>
         </div>
       </section>
 

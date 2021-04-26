@@ -14,3 +14,45 @@ navToggle.addEventListener("click", function () {
       navToggle.classList.add("main-nav__toggle--open");
   }
 });
+
+const btnBefore = document.querySelector(".example__button--before");
+const btnAfter = document.querySelector(".example__button--after");
+const imgBefore = document.querySelector(".example__img--before");
+const imgAfter = document.querySelector(".example__img--after");
+
+btnBefore.addEventListener("click", function () {
+  if (imgBefore.classList.contains("example__img--disabled")) {
+    imgBefore.classList.remove("example__img--disabled"),
+      imgAfter.classList.add("example__img--disabled");
+  }
+});
+
+btnAfter.addEventListener("click", function () {
+  if (imgAfter.classList.contains("example__img--disabled")) {
+    imgAfter.classList.remove("example__img--disabled"),
+      imgBefore.classList.add("example__img--disabled");
+  }
+});
+
+const tabletWidth = 768;
+const scale = progress.querySelector(".example__range");
+const range = scale.querySelector(".example__input");
+
+if (docWidth >= tabletWidth) {
+  range.addEventListener("input", function () {
+    imgBefore.style.width = 100 - range.value + "%";
+    imgAfter.style.width = range.value + "%";
+  });
+
+  btnBefore.addEventListener("click", function () {
+    imgBefore.style.width = "100%";
+    imgAfter.style.width = "0%";
+    range.value = 0;
+  });
+
+  btnAfter.addEventListener("click", function () {
+    imgBefore.style.width = "0%";
+    imgAfter.style.width = "100%";
+    range.value = 100;
+  });
+}
