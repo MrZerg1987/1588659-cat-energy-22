@@ -5,51 +5,12 @@
   margin: 0 auto;
   padding: 27px 0 30px 0;
 
-  background-color: $color-special-background-grey;
+  background-color: $color-background-grey;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 71px 0;
+    padding: 43px 0 0 0;
 
     background-color: transparent;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0 0 68px 0;
-  }
-}
-
-.example__blocks {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-}
-
-.example__inner {
-  @media (min-width: $tablet-width) {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-
-    width: 100%;
-    height: 463px;
-
-    background-color: $color-background-grey;
-  }
-
-  &::after {
-    @media (min-width: $desktop-width) {
-      content: "";
-      position: absolute;
-      right: 0;
-      bottom: 0;
-
-      width: 454px;
-      height: 463px;
-
-      background-color: $color-special-background-grey;
-    }
   }
 }
 
@@ -69,7 +30,58 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 69px 0 146px 0;
+    margin: 23px 0 73px;
+  }
+}
+
+.example__main-block {
+  position: relative;
+
+  margin: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    z-index: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 0;
+
+    background-color: $color-background-grey;
+  }
+}
+
+.example__description-block {
+  @media (min-width: $tablet-width) {
+    margin: 0 30px 217px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 68px 110px;
+  }
+}
+
+.example__illustration-block {
+  @media (min-width: $tablet-width) {
+    position: relative;
+    right: 0;
+
+    padding: 0 0 67px 0;
+
+    background-color: $color-background-grey;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+
+    width: 620px;
+    margin: 0 111px 0 0;
+
+    background-color: transparent;
   }
 }
 
@@ -93,60 +105,63 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    margin: 0 0 69px 0;
+    margin: 74px 0 69px 0;
   }
 }
 
 .example__foto {
-  width: 311px;
-  height: 232px;
-  margin: 0 auto 17px auto;
+  width: 280px;
+  height: 241px;
+  margin: 0 auto 25px auto;
 
   @media (min-width: $tablet-width) {
-    position: relative;
+    position: absolute;
+    bottom: 88px;
+    left: 50%;
 
     width: 708px;
-    height: 530px;
-    margin: 45px auto 0 auto;
+    height: 520px;
+    margin-left: -353px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 690px;
-    height: 536px;
-    margin: 10px auto 14px auto;
+    bottom: 109px;
+
+    width: 620px;
+    height: 518px;
   }
 }
 
 .example__img {
   display: flex;
   justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     position: absolute;
     bottom: 0;
-
-    height: 100%;
-    margin-left: 0;
-
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  img {
-    @media (min-width: $tablet-width) {
-      display: none;
-    }
   }
 }
 
 .example__img--before {
+  background-image: url("../img/content/fat-cat-mobile@1x.png");
+  background-position-x: -20px;
+  background-size: cover;
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/content/fat-cat-mobile@2x.png");
+  }
+
   @media (min-width: $tablet-width) {
     left: 0;
 
-    width: 100%;
+    width: 50%;
 
     background-image: url("../img/content/fat-cat-tablet@1x.png");
-    background-position-x: -25px;
+    background-position-x: 16px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/content/fat-cat-tablet@2x.png");
@@ -154,8 +169,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 61%;
+
     background-image: url("../img/content/fat-cat-desktop@1x.png");
-    background-position-x: -35px;
+    background-position-x: 14px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/content/fat-cat-desktop@2x.png");
@@ -164,12 +181,20 @@
 }
 
 .example__img--after {
-  @media (min-width: $tablet-width) {
-    right: 10%;
+  background-image: url("../img/content/slim-cat-tablet@1x.png");
+  background-position-x: 15px;
+  background-position-y: 8px;
+  background-size: contain;
 
-    width: 80%;
+  @media (min-width: $tablet-width) {
+    right: 0;
+
+    width: 50%;
 
     background-image: url("../img/content/slim-cat-tablet@1x.png");
+    background-position-x: -247px;
+    background-position-y: 0;
+    background-size: cover;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/content/slim-cat-tablet@2x.png");
@@ -177,10 +202,32 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 39%;
+
     background-image: url("../img/content/slim-cat-desktop@1x.png");
+    background-position-x: -272px;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/content/slim-cat-desktop@2x.png");
+    }
+  }
+
+  &::after {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      top: 190px;
+      left: 0;
+      z-index: -1;
+
+      width: 396px;
+      height: 463px;
+
+      background-image: linear-gradient(
+        to right,
+        $color-special-background-grey 0%,
+        $color-background-grey 100%
+      );
     }
   }
 }
@@ -188,17 +235,26 @@
 .example__img--disabled {
   display: none;
 
-  // @media (min-width: $tablet-width) {
-  //   display: flex;
-  // }
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .example__buttons {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 0 0 4px;
+  margin: 0 0 0 3px;
   padding: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 358px 0 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 53px;
+    padding: 0;
+  }
 }
 
 .example__button {
@@ -239,10 +295,10 @@
 }
 
 .example__range {
-  margin: 0 15px 0 18px;
+  margin: 0 18px;
 
   @media (min-width: $tablet-width) {
-    margin: -4px 20px 0 25px;
+    margin: -4px 23px 0 22px;
   }
 
   input[type="range"] {
@@ -277,7 +333,52 @@
     }
   }
 
+  input[type="range"]::-moz-range-track {
+    height: 6px;
+    margin: 5px;
+
+    border-radius: 5px;
+
+    @media (min-width: $tablet-width) {
+      height: 34px;
+      margin: 0;
+
+      border-radius: 34px;
+    }
+  }
+
   input[type="range"]::-webkit-slider-thumb {
+    width: 50%;
+    height: 6px;
+
+    background-color: $color-green;
+    border-radius: 5px;
+
+    appearance: none;
+
+    @media (min-width: $tablet-width) {
+      box-sizing: content-box;
+      width: 8px;
+      height: 8px;
+
+      border: 13px solid $color-white;
+      border-radius: 50%;
+      box-shadow: 0 0 0 1px $color-special-border-grey;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: 0 0 0 1px $color-special-border-grey,
+          0 3px 3px 1px $color-special-border-grey;
+      }
+
+      &:active {
+        box-shadow: 0 0 0 1px $color-green,
+          0 3px 3px 1px $color-special-border-grey;
+      }
+    }
+  }
+
+  input[type="range"]::-moz-range-thumb {
     width: 50%;
     height: 6px;
 

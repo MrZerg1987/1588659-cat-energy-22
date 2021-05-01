@@ -1,0 +1,40 @@
+.decorative-header {
+  position: relative;
+
+  display: inline-flex;
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      top: 22px;
+      top: 22px;
+      left: -22px;
+      left: -38px;
+
+      width: 100vw;
+      height: 2px;
+
+      background-color: $color-green;
+      transform: translateX(-100%);
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 16px;
+    right: -22px;
+
+    width: 100vw;
+    height: 2px;
+
+    background-color: $color-green;
+    transform: translateX(100%);
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+      right: -38px;
+    }
+  }
+}

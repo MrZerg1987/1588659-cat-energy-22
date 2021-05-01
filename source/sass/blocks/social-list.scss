@@ -1,80 +1,66 @@
 .social-list {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
   justify-content: center;
   align-items: center;
+  width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 20px 10px 18px 10px;
 
   list-style: none;
 
   border-top: 1px solid $color-special-light-grey;
   border-bottom: 1px solid $color-special-light-grey;
 
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(6, max-content);
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    width: 110px;
-    margin-left: 33px;
+    width: max-content;
+    margin: 0 0 0 29px;
+    padding: 14px 10px 12px 10px;
 
     border-top: none;
     border-bottom: none;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 0 0 32px;
+    padding: 11px 10px 12px 10px;
+  }
 }
 
 .social-list__item {
-  &:nth-child(1) svg {
-    width: 23px;
-    height: 16px;
-    margin: 1px 4px 0 -6px;
+  margin: 0 9px 0 5px;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 3px 0 0;
+  }
+
+  &:first-child svg {
     @media (min-width: $tablet-width) {
       width: 30px;
       height: 22px;
-      margin: 0 0 4px -7px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0 4px 7px -6px;
     }
   }
 
-  &:nth-child(2) svg {
-    width: 16px;
-    height: 16px;
-    margin: 4px 0 0 0;
-
+  svg {
     @media (min-width: $tablet-width) {
       width: 23px;
       height: 23px;
-      margin: 0 0 0 7px;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0 0 4px 4px;
     }
   }
 
-  &:nth-child(3) svg {
-    width: 22px;
-    height: 22px;
-    margin: 0 -2px 0 0;
-
+  &:last-child svg {
     @media (min-width: $tablet-width) {
-      width: 32px;
-      height: 32px;
-      margin: 0 0 2px 0;
-    }
-
-    @media (min-width: $desktop-width) {
-      margin: 0 -1px 5px 0;
+      width: 28px;
+      height: 33px;
     }
   }
 }
 
 .social-list__link {
-  display: flex;
-  padding: 20px 16px;
+  padding: 10px;
 
   color: $color-speсial-dark-grey;
 
@@ -87,9 +73,5 @@
     color: $color-green;
 
     opacity: 0.3;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
   }
 }

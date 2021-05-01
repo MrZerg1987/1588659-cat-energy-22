@@ -1,9 +1,5 @@
-.owner-contacts {
-  position: relative;
-}
-
 .owner-contacts__title {
-  width: 187px;
+  max-width: 187px;
   margin: 26px 0 35px 0;
   padding: 0;
 
@@ -12,40 +8,16 @@
   font-size: 24px;
   line-height: 26px;
 
-  background-color: $color-white;
-  box-shadow: 0 0 0 14px $color-white;
-
   @media (min-width: $tablet-width) {
-    width: 512px;
+    max-width: 85%;
     margin: 73px 0 76px 0;
 
     font-size: 36px;
     line-height: 36px;
-
-    box-shadow: 0 0 0 40px $color-white;
   }
 
   @media (min-width: $desktop-width) {
     margin: 68px 0 76px 0;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 17px;
-    left: 10%;
-    z-index: -1;
-
-    width: 90%;
-
-    border-bottom: 2px solid $color-green;
-
-    @media (min-width: $tablet-width) {
-      top: 22px;
-      left: 0;
-
-      width: 100%;
-    }
   }
 }
 
@@ -104,7 +76,11 @@
     right: 15px;
 
     @media (min-width: $tablet-width) {
-      right: 14px;
+      right: 15px;
+    }
+
+    @media (min-width: $desktop-width) {
+      right: 18px;
     }
   }
 }
@@ -121,30 +97,34 @@
   border: 1px solid $color-input-grey;
 
   &:hover {
-    border: 1px solid $color-special-border-grey;
+    outline: 1px solid $color-special-border-grey;
   }
 
   &:focus {
-    border: 2px solid $color-dark-grey;
+    outline: 2px solid $color-dark-grey;
   }
 
-  &:invalid {
-    border: 2px solid $color-error-red;
+  &:invalid:focus {
+    outline: 2px solid $color-error-red;
   }
 
   &:focus + svg {
     color: $color-green;
   }
 
-  &:invalid + svg {
+  &:invalid:focus + svg {
     color: $color-error-red;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 16px;
+    padding: 10px 22px;
 
     font-size: 20px;
     line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 10px 20px;
   }
 
   &::placeholder {

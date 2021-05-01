@@ -20,14 +20,12 @@
 
   @media (min-width: $tablet-width) {
     height: 430px;
-    margin: 108px 0 0 0;
     padding: 52px 37px 37px 37px;
 
     border: 1px solid $color-border-grey;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 119px 0 0 0;
     padding: 50px 39px 39px 39px;
   }
 }
@@ -65,7 +63,7 @@
 
   @media (min-width: $tablet-width) {
     display: block;
-    margin: 0 auto 50px auto;
+    margin: 0 auto 49px auto;
   }
 }
 
