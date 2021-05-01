@@ -223,11 +223,7 @@
       width: 396px;
       height: 463px;
 
-      background-image: linear-gradient(
-        to right,
-        $color-special-background-grey 0%,
-        $color-background-grey 100%
-      );
+      background-image: linear-gradient(to right, $color-special-background-grey 0%, $color-background-grey 100%);
     }
   }
 }
