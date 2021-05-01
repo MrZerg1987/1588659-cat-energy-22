@@ -37,13 +37,10 @@
   }
 }
 
-.pet-data__item {
-  display: grid;
-}
-
 .pet-data__label {
-  display: grid;
+  display: flex;
   align-items: center;
+  margin: 0;
 
   font-style: normal;
   font-weight: 400;
@@ -51,18 +48,16 @@
   line-height: 18px;
   text-transform: uppercase;
 
-  grid-column-gap: 14px;
-  grid-template-columns: max-content 1fr;
-
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
-
-    grid-column-gap: 21px;
   }
 }
 
 .pet-data__input {
+  display: flex;
+  flex-grow: 1;
+  margin: 0 0 0 15px;
   padding: 13px 15px;
 
   font-style: normal;
@@ -74,19 +69,19 @@
   border: 1px solid $color-input-grey;
 
   &:hover {
-    border: 1px solid $color-special-border-grey;
+    outline: 1px solid $color-special-border-grey;
   }
 
   &:focus {
-    border: 2px solid $color-dark-grey;
+    outline: 2px solid $color-dark-grey;
   }
 
-  &:invalid {
-    border: 2px solid $color-error-red;
+  &:invalid:focus {
+    outline: 2px solid $color-error-red;
   }
 
   @media (min-width: $tablet-width) {
-    padding: 10px 15px;
+    padding: 10px 20px;
 
     font-size: 20px;
     line-height: 30px;

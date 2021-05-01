@@ -6,10 +6,14 @@
   width: 100%;
   padding: 0;
 
+  border-bottom: 1px solid $color-light-grey;
+
   @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
     padding: 22px 3.9%;
+
+    border-bottom: none;
   }
 
   @media (min-width: $desktop-width) {
@@ -24,7 +28,7 @@
 .header__logo {
   display: flex;
   justify-content: center;
-  margin: 12px auto 16px auto;
+  margin: 11px auto 18px auto;
   padding: 0;
 
   &:hover {
@@ -43,5 +47,17 @@
 
   @media (min-width: $desktop-width) {
     padding: 3px 0 0 0;
+  }
+
+  img {
+    @media (min-width: $tablet-width) {
+      width: 174px;
+      height: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 202px;
+      height: 59px;
+    }
   }
 }

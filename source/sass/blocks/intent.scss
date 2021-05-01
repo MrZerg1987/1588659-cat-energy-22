@@ -40,10 +40,18 @@
   }
 }
 
+.intent__item {
+  padding: 0 0 0 46px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 0 0 60px;
+  }
+}
+
 .intent__label {
   position: relative;
 
-  padding: 5px 0 5px 46px;
+  padding: 5px 0 5px 0;
 
   font-style: normal;
   font-weight: 400;
@@ -52,22 +60,22 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    padding: 5px 0 5px 60px;
+    padding: 5px 0 5px 0;
 
     font-size: 20px;
     line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
 .intent__input + label::before {
   content: "";
   position: absolute;
-  bottom: 2px;
-  left: 1px;
+  top: 2px;
+  left: -46px;
 
   width: 30px;
   height: 30px;
@@ -76,7 +84,8 @@
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    bottom: 0;
+    top: 0;
+    left: -61px;
 
     width: 40px;
     height: 40px;
@@ -94,18 +103,19 @@
 .intent__input:checked + label::after {
   content: "";
   position: absolute;
-  bottom: 10px;
-  left: 8px;
+  top: 10px;
+  left: -38px;
 
   width: 1px;
   height: 1px;
 
-  border: 8px solid $color-green;
+  border: 7px solid $color-green;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
-    left: 11px;
+    top: 11px;
+    left: -50px;
 
-    border: 10px solid $color-green;
+    border: 9px solid $color-green;
   }
 }

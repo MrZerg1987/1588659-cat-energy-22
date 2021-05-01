@@ -12,6 +12,7 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
+const terser = require("gulp-terser");
 
 // Styles
 
@@ -51,7 +52,22 @@ const html = () => {
     .pipe(gulp.dest("build"));
 };
 
-exports.html = html;
+// Scripts
+
+const scripts = () => {
+  return gulp
+    .src("source/js/script.js")
+    .pipe(terser())
+    .pipe(rename("script.min.js"))
+    .pipe(gulp.dest("build/js"))
+    .pipe(sync.stream());
+};
+
+// JS
+
+const js = () => {
+  return gulp.src("source/*.js").pipe(gulp.dest("build/js"));
+};
 
 // Images
 
@@ -120,7 +136,8 @@ const refresh = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/*.scss", gulp.series(styles, refresh));
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles));
+  gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, refresh));
 };
 
@@ -130,6 +147,7 @@ const build = gulp.series(
   clean,
   copy,
   styles,
+  scripts,
   createWebp,
   images,
   sprite,

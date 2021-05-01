@@ -10,6 +10,19 @@
     <link rel="apple-touch-icon" href="favicon/152.png" />
     <link rel="manifest" href="favicon/manifest.webmanifest" />
 
+    <link
+      rel="preload"
+      href="fonts/oswaldregular.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      href="fonts/oswaldmedium.woff2"
+      as="font"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="css/style.min.css" />
     <title>HTML Academy: Кэт энерджи</title>
   </head>
@@ -28,6 +41,8 @@
               srcset="img/svg/logo-tablet.svg"
             />
             <img
+              width="280"
+              height="38"
               src="img/svg/logo-mobile.svg"
               alt="Логотип компании Кэт энерджи"
             />
@@ -35,11 +50,11 @@
         </a>
         <nav class="main-nav">
           <button
-            class="main-nav__toggle main-nav__toggle--close"
+            class="main-nav__toggle main-nav__toggle--close main-nav__no-js"
             type="button"
             aria-label="Открыть/закрыть меню"
           ></button>
-          <ul class="main-nav__list main-nav__list--open">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a
                 class="main-nav__link main-nav__link--active-index main-nav__link--index"
@@ -82,12 +97,7 @@
               деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу
               сбросить лишний вес.
             </p>
-            <a
-              href="catalog.html"
-              class="programs__link"
-              aria-label="Открыть каталог товаров серии Slim"
-              >Каталог Slim
-            </a>
+            <a href="catalog.html" class="programs__link">Каталог Slim </a>
           </li>
           <li class="programs__item programs__item--muscle-mass">
             <h2 class="programs__title">Набор массы</h2>
@@ -95,12 +105,7 @@
               Заработать авторитет среди дворовых котов и даже собак? Серия Cat
               Energy Pro поможет вашему коту нарастить необходимые мышцы!
             </p>
-            <a
-              href="catalog.html"
-              class="programs__link"
-              aria-label="Открыть каталог товаров серии Pro"
-              >Каталог Pro
-            </a>
+            <a href="catalog.html" class="programs__link">Каталог Pro </a>
           </li>
         </ul>
       </section>
@@ -136,135 +141,73 @@
       </section>
 
       <section class="example">
-        <div class="container example__blocks">
-          <div class="example__block-left">
+        <div class="example__blocks">
+          <div class="example__title-block container">
             <h2 class="example__title">Живой пример</h2>
-            <p class="example__description">
-              Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
-              на Cat Energy Slim. Отличный результат без изнуряющих тренировок!
-              При этом он не менял своих привычек и по-прежнему спит по 16 часов
-              в день.
-            </p>
-            <div class="stats">
-              <div class="stats__list">
-                <dl class="stats__item">
-                  <dt class="stats__value">5 кг</dt>
-                  <dd class="stats__description">снижение веса</dd>
-                </dl>
-                <dl class="stats__item">
-                  <dt class="stats__value">60 дней</dt>
-                  <dd class="stats__description">затрачено времени</dd>
-                </dl>
-              </div>
-              <div class="stats__total">
-                <p class="stats__total-description">
-                  затраты на питание:
-                  <span class="stats__total-value"> 15 000 РУБ. </span>
-                </p>
-              </div>
-            </div>
           </div>
-          <div class="example__block-right">
-            <div class="example__foto">
-              <picture class="example__img example__img-disable">
-                <source
-                  type="image/webp"
-                  media="(min-width: 1200px)"
-                  srcset="
-                    img/content/fat-cat-desktop@1x.webp 1x,
-                    img/content/fat-cat-desktop@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/content/fat-cat-tablet@1x.webp 1x,
-                    img/content/fat-cat-tablet@2x.webp 2x
-                  "
-                />
-                <source
-                  type="image/webp"
-                  srcset="
-                    img/content/fat-cat-mobile@1x.webp 1x,
-                    img/content/fat-cat-mobile@2x.webp 2x
-                  "
-                />
-
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/content/fat-cat-desktop@1x.png 1x,
-                    img/content/fat-cat-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/content/fat-cat-tablet@1x.png 1x,
-                    img/content/fat-cat-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  src="img/content/fat-cat-mobile@1x.png"
-                  srcset="
-                    img/content/fat-cat-mobile@1x.png 1x,
-                    img/content/fat-cat-mobile@2x.png 2x
-                  "
-                  alt="Фотография толстого кота"
-                />
-              </picture>
-              <picture class="example__img">
-                <source
-                  media="(min-width: 1440px)"
-                  srcset="
-                    img/content/slim-cat-desktop@1x.png 1x,
-                    img/content/slim-cat-desktop@2x.png 2x
-                  "
-                />
-                <source
-                  media="(min-width: 768px)"
-                  srcset="
-                    img/content/slim-cat-tablet@1x.png 1x,
-                    img/content/slim-cat-tablet@2x.png 2x
-                  "
-                />
-                <img
-                  src="img/content/slim-cat-mobile@1x.png"
-                  srcset="
-                    img/content/slim-cat-mobile@1x.png 1x,
-                    img/content/slim-cat-mobile@2x.png 2x
-                  "
-                  alt="Фотография толстого кота"
-                />
-              </picture>
-            </div>
-            <div class="example__buttons">
-              <button
-                class="example__button"
-                type="button"
-                aria-label="Кнопка переключения картинки: 'Было'"
-              >
-                Было
-              </button>
-              <div class="example__range">
-                <div class="example__selector"></div>
-                <input
-                  type="range"
-                  min="0"
-                  max="100"
-                  step="1"
-                  value="50"
-                  name="range"
-                />
+          <div class="example__main-block">
+            <div class="example__description-block">
+              <p class="example__description">
+                Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм
+                на Cat Energy Slim. Отличный результат без изнуряющих
+                тренировок! При этом он не менял своих привычек и по-прежнему
+                спит по 16 часов в день.
+              </p>
+              <div class="stats">
+                <div class="stats__list">
+                  <dl class="stats__item">
+                    <dt class="stats__value">5 кг</dt>
+                    <dd class="stats__description">снижение веса</dd>
+                  </dl>
+                  <dl class="stats__item">
+                    <dt class="stats__value">60 дней</dt>
+                    <dd class="stats__description">затрачено времени</dd>
+                  </dl>
+                </div>
+                <div class="stats__total">
+                  <p class="stats__total-description">
+                    затраты на питание:
+                    <span class="stats__total-value"> 15 000 РУБ. </span>
+                  </p>
+                </div>
               </div>
-              <button
-                class="example__button"
-                type="button"
-                aria-label="Кнопка переключения картинки: 'Стало'"
-              >
-                Стало
-              </button>
+            </div>
+            <div class="example__illustration-block">
+              <div class="example__foto">
+                <div
+                  class="example__img example__img--before example__img--disabled"
+                ></div>
+                <div class="example__img example__img--after"></div>
+              </div>
+              <div class="example__buttons">
+                <button
+                  class="example__button example__button--before"
+                  type="button"
+                  aria-label="Кнопка переключения картинки: 'Было'"
+                >
+                  Было
+                </button>
+                <div class="example__range">
+                  <div class="example__selector"></div>
+                  <input
+                    aria-label="Селектор переключения между картинками"
+                    class="example__input"
+                    type="range"
+                    min="0"
+                    max="100"
+                    step="1"
+                    value="50"
+                    name="range"
+                  />
+                </div>
+                <button
+                  class="example__button example__button--after"
+                  type="button"
+                  aria-label="Кнопка переключения картинки: 'Стало'"
+                >
+                  Стало
+                </button>
+              </div>
             </div>
           </div>
         </div>
@@ -284,12 +227,62 @@
           </div>
         </div>
         <div class="collaboration__map">
+          <picture>
+            <source
+              type="image/webp"
+              media="(min-width: 1440px)"
+              srcset="
+                img/content/map-desktop@1x.webp 1x,
+                img/content/map-desktop@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              media="(min-width: 768px)"
+              srcset="
+                img/content/map-tablet@1x.webp 1x,
+                img/content/map-tablet@2x.webp 2x
+              "
+            />
+            <source
+              type="image/webp"
+              srcset="
+                img/content/map-mobile@1x.webp 1x,
+                img/content/map-mobile@2x.webp 2x
+              "
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="
+                img/content/map-desktop@1x.png 1x,
+                img/content/map-desktop@2x.png 2x
+              "
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="
+                img/content/map-tablet@1x.png 1x,
+                img/content/map-tablet@2x.png 2x
+              "
+            />
+            <img
+              src="img/content/map-mobile@1x.png"
+              srcset="
+                img/content/map-mobile@1x.png 1x,
+                img/content/map-mobile@2x.png 2x
+              "
+              alt="Карта с адресом: Санкт-Петербург, ул. Большая Конюшенная, д. 19/8"
+              width="320"
+              height="362"
+            />
+          </picture>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1618195427311!5m2!1sru!2sby"
             height="450"
             style="border: 0"
             allowfullscreen=""
             loading="lazy"
+            title="Карта"
           ></iframe>
         </div>
       </section>
@@ -314,7 +307,7 @@
                 href="https://vk.com/"
                 aria-label="Ссылка на страницу социальной сети 'Вконтакте'"
               >
-                <svg width="30" height="22">
+                <svg width="23" height="16">
                   <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
                 </svg>
               </a>
@@ -325,7 +318,7 @@
                 href="https://www.instagram.com/"
                 aria-label="Ссылка на страницу социальной сети 'Инстаграм'"
               >
-                <svg width="23" height="23">
+                <svg width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
@@ -336,7 +329,7 @@
                 href="https://www.facebook.com/"
                 aria-label="Ссылка на страницу социальной сети 'Фейсбук'"
               >
-                <svg width="28" height="33">
+                <svg width="22" height="22">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
               </a>
@@ -349,12 +342,13 @@
             aria-label="Ссылка на страницу разработчика 'HTML Academy'"
           >
             <span class="copyright__name">HTML Academy</span>
-            <svg width="35" height="45">
+            <svg width="41" height="41">
               <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </div>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

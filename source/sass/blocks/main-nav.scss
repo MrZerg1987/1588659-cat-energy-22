@@ -23,6 +23,7 @@
   height: 20px;
 
   background-color: transparent;
+  background-image: url("../img/svg/close-button.svg");
   background-repeat: no-repeat;
   border: 0;
   cursor: pointer;
@@ -32,11 +33,11 @@
   }
 }
 
-.main-nav__toggle--close {
-  background-image: url("../img/svg/close-button.svg");
+.main-nav__no-js {
+  display: none;
 }
 
-.main-nav__toggle--open {
+.main-nav__toggle--close {
   background-image: url("../img/svg/open-button.svg");
 }
 
@@ -51,42 +52,35 @@
   list-style: none;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
     margin: 11px 0 0 0;
+
+    grid-column-gap: 30px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
   }
-}
 
-.main-nav__list--open {
-  display: flex;
-  flex-direction: column;
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
+  @media (min-width: $desktop-width) {
+    margin: 9px 0 0 0;
   }
 }
 
 .main-nav__list--close {
   display: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
 }
 
 .main-nav__item {
   border-top: 1px solid $color-light-grey;
 
   @media (min-width: $tablet-width) {
+    justify-content: center;
     margin: 0 5px 0 0;
 
     border-top: none;
-  }
-
-  &:last-child {
-    border-bottom: 1px solid $color-light-grey;
-
-    @media (min-width: $tablet-width) {
-      margin: 0;
-
-      border-bottom: none;
-    }
   }
 }
 
@@ -111,7 +105,6 @@
   }
 
   @media (min-width: $tablet-width) {
-    justify-content: space-between;
     width: max-content;
     padding: 10px 0 6px 0;
 
