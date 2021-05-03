@@ -22,25 +22,12 @@ const styles = () => {
     .pipe(plumber())
     .pipe(sourcemap.init())
     .pipe(sass())
+    .pipe(gulp.dest("build/css"))
     .pipe(postcss([autoprefixer(), csso()]))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
-};
-
-// Server
-
-const server = (done) => {
-  sync.init({
-    server: {
-      baseDir: "build",
-    },
-    cors: true,
-    notify: false,
-    ui: false,
-  });
-  done();
 };
 
 // HTML
@@ -61,12 +48,6 @@ const scripts = () => {
     .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
-};
-
-// JS
-
-const js = () => {
-  return gulp.src("source/*.js").pipe(gulp.dest("build/js"));
 };
 
 // Images
@@ -93,7 +74,7 @@ const createWebp = () => {
     .pipe(gulp.dest("build/img"));
 };
 
-// SVG
+// SVG sprite
 
 const sprite = () => {
   return gulp
@@ -126,11 +107,31 @@ const clean = () => {
   return del("build");
 };
 
+// Server
+
+const server = (done) => {
+  sync.init({
+    server: {
+      baseDir: "build",
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
+};
+
 // Refresh
 
 const refresh = (done) => {
   sync.reload();
   done();
+};
+
+// JS
+
+const js = () => {
+  return gulp.src("source/*.js").pipe(gulp.dest("build/js"));
 };
 
 // Watcher
@@ -146,18 +147,34 @@ const watcher = () => {
 const build = gulp.series(
   clean,
   copy,
-  styles,
-  scripts,
-  createWebp,
   images,
-  sprite,
-  html
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    sprite,
+    createWebp
+  )
 );
 
 exports.build = build;
 
 // Start
 
-const start = gulp.series(build, server, watcher);
+const start = gulp.series(
+  clean,
+  copy,
+  gulp.parallel(
+    styles,
+    html,
+    scripts,
+    sprite,
+    createWebp
+  ),
+  gulp.series(
+    server,
+    watcher
+  )
+);
 
 exports.start = start;

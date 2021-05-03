@@ -106,19 +106,21 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
-  text-align: center;
+  text-align: left;
   color: $color-special-black;
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
     margin: -6px 0 0 0;
 
+
     font-size: 20px;
     line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
+    width: 50%;
+    margin: 0 20px 0 0;
   }
 }
 
